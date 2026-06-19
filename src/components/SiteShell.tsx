@@ -1,0 +1,252 @@
+'use client'
+
+import { useEffect, useRef } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import Script from 'next/script'
+import { useLang } from './LanguageProvider'
+import { type Lang } from '@/lib/i18n'
+import Logo from './Logo'
+
+const NAV: { href: string; key: string }[] = [
+  { href: '/services', key: 'nav.services' },
+  { href: '/packages', key: 'nav.packages' },
+  { href: '/case', key: 'nav.case' },
+  { href: '/about', key: 'nav.about' },
+  { href: '/blog', key: 'nav.blog' },
+  { href: '/contact', key: 'nav.contact' },
+]
+const LANGS: Lang[] = ['en', 'zh', 'ms']
+const LANG_LABEL: Record<Lang, string> = { en: 'EN', zh: '中', ms: 'BM' }
+
+declare global { interface Window { THREE?: any } }
+
+export default function SiteShell({ children }: { children: React.ReactNode }) {
+  const { lang, setLang, t } = useLang()
+  const pathname = usePathname()
+  const stackRef = useRef<HTMLDivElement>(null)
+  const bgReady = useRef(false)
+
+  // ---- custom cursor (desktop only) + header scroll, bound once ----
+  useEffect(() => {
+    const fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches
+    let raf = 0
+    if (fine) {
+      document.body.classList.add('custom-cursor')
+      const dot = document.querySelector<HTMLElement>('.cursor-dot')
+      const ring = document.querySelector<HTMLElement>('.cursor-ring')
+      let mx = 0, my = 0, rx = 0, ry = 0
+      const move = (e: MouseEvent) => { mx = e.clientX; my = e.clientY; if (dot) { dot.style.left = mx + 'px'; dot.style.top = my + 'px' } }
+      window.addEventListener('mousemove', move)
+      const loop = () => { rx += (mx - rx) * .18; ry += (my - ry) * .18; if (ring) { ring.style.left = rx + 'px'; ring.style.top = ry + 'px' } raf = requestAnimationFrame(loop) }
+      loop()
+      const onScroll = () => stackRef.current?.classList.toggle('scrolled', window.scrollY > 80)
+      window.addEventListener('scroll', onScroll)
+      return () => { window.removeEventListener('mousemove', move); window.removeEventListener('scroll', onScroll); cancelAnimationFrame(raf) }
+    } else {
+      const onScroll = () => stackRef.current?.classList.toggle('scrolled', window.scrollY > 80)
+      window.addEventListener('scroll', onScroll)
+      return () => window.removeEventListener('scroll', onScroll)
+    }
+  }, [])
+
+  // ---- per-route interactivity: reveal, tilt, magnetic, cursor-hover, count-up, AI orb ----
+  useEffect(() => {
+    const fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches
+    const cleanups: (() => void)[] = []
+    const timer = setTimeout(() => {
+      // reveal
+      const io = new IntersectionObserver((es) => es.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.classList.add('in')
+          if (en.target.classList.contains('reveal-stagger')) {
+            Array.from(en.target.children).forEach((c, i) => { (c as HTMLElement).style.transitionDelay = (i * 0.07) + 's' })
+          }
+          en.target.querySelectorAll<HTMLElement>('[data-count]').forEach(runCount)
+          if ((en.target as HTMLElement).hasAttribute('data-count')) runCount(en.target as HTMLElement)
+          io.unobserve(en.target)
+        }
+      }), { threshold: .14 })
+      document.querySelectorAll('.reveal,.reveal-stagger').forEach((el) => io.observe(el))
+      cleanups.push(() => io.disconnect())
+
+      // tilt
+      document.querySelectorAll<HTMLElement>('[data-tilt]').forEach((card) => {
+        const mm = (e: MouseEvent) => { const r = card.getBoundingClientRect(); const px = (e.clientX - r.left) / r.width - .5, py = (e.clientY - r.top) / r.height - .5; card.style.transform = `perspective(700px) rotateY(${px * 9}deg) rotateX(${-py * 9}deg) translateZ(6px)` }
+        const ml = () => { card.style.transform = '' }
+        card.addEventListener('mousemove', mm); card.addEventListener('mouseleave', ml)
+        cleanups.push(() => { card.removeEventListener('mousemove', mm); card.removeEventListener('mouseleave', ml) })
+      })
+
+      // magnetic buttons
+      document.querySelectorAll<HTMLElement>('.btn').forEach((btn) => {
+        const mm = (e: MouseEvent) => { const r = btn.getBoundingClientRect(); btn.style.transform = `translate(${(e.clientX - r.left - r.width / 2) * .2}px,${(e.clientY - r.top - r.height / 2) * .3}px)` }
+        const ml = () => { btn.style.transform = '' }
+        btn.addEventListener('mousemove', mm); btn.addEventListener('mouseleave', ml)
+        cleanups.push(() => { btn.removeEventListener('mousemove', mm); btn.removeEventListener('mouseleave', ml) })
+      })
+
+      // cursor hover targets
+      if (fine) {
+        const ring = document.querySelector<HTMLElement>('.cursor-ring')
+        const on = () => ring?.classList.add('hover')
+        const off = () => ring?.classList.remove('hover')
+        document.querySelectorAll('a,button,input,select,.srow,.card,.case,.post').forEach((el) => {
+          el.addEventListener('mouseenter', on); el.addEventListener('mouseleave', off)
+          cleanups.push(() => { el.removeEventListener('mouseenter', on); el.removeEventListener('mouseleave', off) })
+        })
+      }
+
+      // AI orb (if present on this page)
+      const orb = document.getElementById('ai-canvas') as HTMLCanvasElement | null
+      if (orb && window.THREE && !(orb as any)._init) cleanups.push(initOrb(orb))
+
+      // cinematic 06: kinetic text reveal
+      document.querySelectorAll('.kline').forEach((k) => k.classList.add('in'))
+
+      // cinematic 01: parallax hero (desktop), depth amplified +30%
+      const pxEls = Array.from(document.querySelectorAll<HTMLElement>('[data-depth]'))
+      if (fine && pxEls.length) {
+        const pm = (e: MouseEvent) => {
+          const mx = e.clientX / window.innerWidth - .5
+          const my = e.clientY / window.innerHeight - .5
+          pxEls.forEach((el) => {
+            const d = (parseFloat(el.dataset.depth || '0')) * 1.3
+            el.style.transform = `translate(${mx * d}px,${my * d}px)`
+          })
+        }
+        window.addEventListener('mousemove', pm)
+        cleanups.push(() => window.removeEventListener('mousemove', pm))
+      }
+    }, 60)
+    return () => { clearTimeout(timer); cleanups.forEach((c) => c()) }
+  }, [pathname, lang])
+
+  // ---- WebGL background once Three is ready ----
+  const startBg = () => {
+    if (bgReady.current || !window.THREE) return
+    const canvas = document.getElementById('bg-canvas') as HTMLCanvasElement | null
+    if (!canvas) return
+    bgReady.current = true
+    initBg(canvas)
+  }
+
+  return (
+    <>
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+        strategy="afterInteractive"
+        onLoad={startBg}
+      />
+      <canvas id="bg-canvas" />
+      <div className="noise" />
+      <div className="cursor-ring" />
+      <div className="cursor-dot" />
+
+      <div className="topstack" ref={stackRef}>
+        <div className="topbar"><span className="pulse" /><span>{t('topbar')}</span></div>
+        <header>
+          <div className="wrap nav">
+            <Link href="/" className="logo" aria-label="Zeta Digital"><Logo idSuffix="hdr" /></Link>
+            <div className="nav-right">
+              <nav className="nav-links">
+                {NAV.map((n) => (
+                  <Link key={n.href} href={n.href} className={`navlink${pathname === n.href ? ' active' : ''}`}>{t(n.key)}</Link>
+                ))}
+              </nav>
+              <div className="langsw">
+                {LANGS.map((l) => (
+                  <button key={l} className={lang === l ? 'active' : ''} onClick={() => setLang(l)}>{LANG_LABEL[l]}</button>
+                ))}
+              </div>
+              <Link className="btn btn-primary" href="/contact" style={{ padding: '11px 18px' }}>{t('nav.cta')}</Link>
+            </div>
+          </div>
+        </header>
+      </div>
+
+      <main id="view">{children}</main>
+
+      <footer>
+        <div className="wrap">
+          <div className="foot-grid">
+            <div>
+              <Link href="/" className="logo" aria-label="Zeta Digital"><Logo idSuffix="ft" /></Link>
+              <p style={{ marginTop: 12, color: 'rgba(255,255,255,.3)' }}>{t('foot.tagline')}</p>
+              <p style={{ color: 'rgba(255,255,255,.2)' }}>nothingimpossible.com.my</p>
+            </div>
+            <div>
+              <div className="ft">{t('foot.quick')}</div>
+              <Link href="/services">{t('nav.services')}</Link>
+              <Link href="/packages">{t('nav.packages')}</Link>
+              <Link href="/about">{t('nav.about')}</Link>
+              <Link href="/contact">{t('nav.cta')}</Link>
+            </div>
+            <div>
+              <div className="ft">{t('foot.contact')}</div>
+              <p>+60 17-792 2510</p><p>zyric@agoh.my</p>
+              <p style={{ color: 'rgba(255,255,255,.25)' }}>{t('foot.country')}</p>
+            </div>
+          </div>
+          <div className="foot-bottom"><span>{t('foot.copy')}</span><span>{t('foot.legal')}</span></div>
+        </div>
+      </footer>
+    </>
+  )
+}
+
+function runCount(el: HTMLElement) {
+  if (el.dataset.done) return
+  el.dataset.done = '1'
+  const target = parseFloat(el.dataset.count || '0') || 0
+  const suf = el.dataset.suffix || '', pre = el.dataset.prefix || ''
+  if (isNaN(target)) { el.textContent = pre + (el.dataset.count || '') + suf; return }
+  const t0 = performance.now(), dur = 1300
+  const tick = (now: number) => {
+    const p = Math.min((now - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3), cur = target * e
+    el.textContent = pre + (target % 1 === 0 ? Math.round(cur) : cur.toFixed(1)) + suf
+    if (p < 1) requestAnimationFrame(tick)
+  }
+  requestAnimationFrame(tick)
+}
+
+function initBg(canvas: HTMLCanvasElement): void {
+  const THREE = window.THREE
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true })
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); renderer.setSize(window.innerWidth, window.innerHeight)
+  const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, .1, 100); camera.position.z = 22
+  const COUNT = 1300, geo = new THREE.BufferGeometry(), pos = new Float32Array(COUNT * 3)
+  for (let i = 0; i < COUNT * 3; i++) pos[i] = (Math.random() - .5) * 72
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3))
+  const points = new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xD0FF00, size: .09, transparent: true, opacity: .5 })); scene.add(points)
+  const ico = new THREE.Mesh(new THREE.IcosahedronGeometry(7, 1), new THREE.MeshBasicMaterial({ color: 0x4D7CFF, wireframe: true, transparent: true, opacity: .2 })); scene.add(ico)
+  const ico2 = new THREE.Mesh(new THREE.IcosahedronGeometry(4.4, 0), new THREE.MeshBasicMaterial({ color: 0xD0FF00, wireframe: true, transparent: true, opacity: .13 })); scene.add(ico2)
+  let tx = 0, ty = 0, sy = 0
+  const mm = (e: MouseEvent) => { tx = e.clientX / window.innerWidth - .5; ty = e.clientY / window.innerHeight - .5 }
+  const sc = () => { sy = window.scrollY }
+  const rs = () => { camera.aspect = window.innerWidth / window.innerHeight; camera.updateProjectionMatrix(); renderer.setSize(window.innerWidth, window.innerHeight) }
+  window.addEventListener('mousemove', mm); window.addEventListener('scroll', sc); window.addEventListener('resize', rs)
+  const animate = () => {
+    requestAnimationFrame(animate)
+    points.rotation.y += .0006; points.rotation.x += .0003; ico.rotation.x += .0015; ico.rotation.y += .002; ico2.rotation.x -= .0025; ico2.rotation.y += .003
+    camera.position.x += (tx * 4 - camera.position.x) * .04; camera.position.y += (-ty * 4 - camera.position.y) * .04; camera.position.z = 22 + sy * .003; camera.lookAt(0, 0, 0)
+    renderer.render(scene, camera)
+  }
+  animate()
+}
+
+function initOrb(canvas: HTMLCanvasElement): () => void {
+  const THREE = window.THREE
+  ;(canvas as any)._init = 1
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true })
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+  const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(55, 1, .1, 100); camera.position.z = 10
+  const sphere = new THREE.Mesh(new THREE.IcosahedronGeometry(3.4, 2), new THREE.MeshBasicMaterial({ color: 0x4D7CFF, wireframe: true, transparent: true, opacity: .55 })); scene.add(sphere)
+  const core = new THREE.Mesh(new THREE.IcosahedronGeometry(1.6, 0), new THREE.MeshBasicMaterial({ color: 0xD0FF00, wireframe: true, transparent: true, opacity: .8 })); scene.add(core)
+  const size = () => { const r = canvas.parentElement!.getBoundingClientRect(); renderer.setSize(r.width, r.height); camera.aspect = r.width / r.height; camera.updateProjectionMatrix() }
+  size(); window.addEventListener('resize', size)
+  let raf = 0
+  const a = () => { raf = requestAnimationFrame(a); sphere.rotation.y += .004; sphere.rotation.x += .002; core.rotation.y -= .01; core.rotation.x += .006; renderer.render(scene, camera) }
+  a()
+  return () => { cancelAnimationFrame(raf); window.removeEventListener('resize', size) }
+}
