@@ -2,6 +2,7 @@
 
 import { useLang } from '@/components/LanguageProvider'
 import LeadForm from '@/components/LeadForm'
+import { WA_LINK } from '@/lib/wa'
 
 export default function ContactPage() {
   const { t } = useLang()
@@ -19,7 +20,7 @@ export default function ContactPage() {
         <div className="contact-grid">
           <div className="cinfo reveal">
             <h3>{t('pg.contact.reach')}</h3>
-            <div style={{ marginTop: 8 }}><div style={sub}>{t('pg.contact.hphone')}</div><p>+60 17-792 2510</p></div>
+            <div style={{ marginTop: 8 }}><div style={sub}>{t('pg.contact.hphone')}</div><p><a href={WA_LINK} target="_blank" rel="noopener noreferrer" style={{ color: '#fff', textDecoration: 'underline', textUnderlineOffset: 3 }}>+60 17-792 2510 (WhatsApp)</a></p></div>
             <div style={{ marginTop: 18 }}><div style={sub}>{t('pg.contact.hemail')}</div><p>zyric@agoh.my</p></div>
             <div style={{ marginTop: 18 }}><div style={sub}>{t('pg.contact.hloc')}</div><p>{t('pg.contact.loc')}</p></div>
           </div>

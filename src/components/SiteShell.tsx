@@ -7,6 +7,7 @@ import Script from 'next/script'
 import { useLang } from './LanguageProvider'
 import { type Lang } from '@/lib/i18n'
 import Logo from './Logo'
+import { WA_LINK } from '@/lib/wa'
 
 const NAV: { href: string; key: string }[] = [
   { href: '/services', key: 'nav.services' },
@@ -24,11 +25,13 @@ declare global { interface Window { THREE?: any } }
 export default function SiteShell({ children }: { children: React.ReactNode }) {
   const { lang, setLang, t } = useLang()
   const pathname = usePathname()
+  const isStudio = (pathname || '').startsWith('/studio')
   const stackRef = useRef<HTMLDivElement>(null)
   const bgReady = useRef(false)
 
   // ---- custom cursor (desktop only) + header scroll, bound once ----
   useEffect(() => {
+    if (isStudio) return
     const fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches
     let raf = 0
     if (fine) {
@@ -52,6 +55,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
 
   // ---- per-route interactivity: reveal, tilt, magnetic, cursor-hover, count-up, AI orb ----
   useEffect(() => {
+    if (isStudio) return
     const fine = window.matchMedia('(hover:hover) and (pointer:fine)').matches
     const cleanups: (() => void)[] = []
     const timer = setTimeout(() => {
@@ -131,6 +135,8 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
     initBg(canvas)
   }
 
+  if (isStudio) return <>{children}</>
+
   return (
     <>
       <Script
@@ -184,13 +190,20 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
             </div>
             <div>
               <div className="ft">{t('foot.contact')}</div>
-              <p>+60 17-792 2510</p><p>zyric@agoh.my</p>
+              <a href={WA_LINK} target="_blank" rel="noopener noreferrer">+60 17-792 2510 (WhatsApp)</a>
+              <p>zyric@agoh.my</p>
               <p style={{ color: 'rgba(255,255,255,.25)' }}>{t('foot.country')}</p>
             </div>
           </div>
           <div className="foot-bottom"><span>{t('foot.copy')}</span><span>{t('foot.legal')}</span></div>
         </div>
       </footer>
+
+      <a className="wa-float" href={WA_LINK} target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="30" height="30" fill="#fff" aria-hidden="true">
+          <path d="M16 3C9.4 3 4 8.4 4 15c0 2.1.6 4.1 1.6 5.9L4 29l8.3-1.6c1.7.9 3.6 1.4 5.7 1.4 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.9 1 1-4.8-.2-.4c-1-1.6-1.5-3.4-1.5-5.3C5 9.5 9.9 4.6 16 4.6S27 9.5 27 15.6 22.1 24.8 16 24.8zm6.1-7.1c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.8.2-.2.3-.9 1.1-1.1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.6-1-.9-1.6-2-1.8-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.3 1.4 3.6c.2.3 2.4 3.7 5.8 5.1.8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 2-.8 2.3-1.6.3-.8.3-1.4.2-1.6-.1-.1-.3-.2-.6-.4z"/>
+        </svg>
+      </a>
     </>
   )
 }

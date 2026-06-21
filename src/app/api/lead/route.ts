@@ -33,9 +33,9 @@ async function sendEmail(data: LeadData): Promise<void> {
   if (!key) { console.warn('[lead] RESEND_API_KEY not set — skipping email'); return }
   const { Resend } = await import('resend')
   const resend = new Resend(key)
-  const from = process.env.LEAD_FROM_EMAIL || 'leads@nothingimpossible.com.my'
+  const from = process.env.LEAD_FROM_EMAIL || 'Zeta Leads <onboarding@resend.dev>'
   const to = process.env.LEAD_TO_EMAIL || 'zyric@agoh.my'
-  await resend.emails.send({
+  const { error } = await resend.emails.send({
     from,
     to,
     subject: `New Lead: ${data.name} — ${data.businessType} — ${data.packageInterest}`,

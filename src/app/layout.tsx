@@ -21,10 +21,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: { card: 'summary_large_image', title: 'Nothing is Impossible — Zeta Digital' },
-  icons: {
-    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
-    apple: '/apple-touch-icon.png',
-  },
 }
 
 const orgSchema = {
