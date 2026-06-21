@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Script from 'next/script'
@@ -28,6 +28,15 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
   const isStudio = (pathname || '').startsWith('/studio')
   const stackRef = useRef<HTMLDivElement>(null)
   const bgReady = useRef(false)
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  // close the mobile menu whenever the route changes
+  useEffect(() => { setMenuOpen(false) }, [pathname])
+  // lock body scroll while the mobile menu is open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
 
   // ---- custom cursor (desktop only) + header scroll, bound once ----
   useEffect(() => {
@@ -165,11 +174,27 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
                   <button key={l} className={lang === l ? 'active' : ''} onClick={() => setLang(l)}>{LANG_LABEL[l]}</button>
                 ))}
               </div>
-              <Link className="btn btn-primary" href="/contact" style={{ padding: '11px 18px' }}>{t('nav.cta')}</Link>
+              <Link className="btn btn-primary hdr-cta" href="/contact" style={{ padding: '11px 18px' }}>{t('nav.cta')}</Link>
+              <button
+                className={`burger${menuOpen ? ' open' : ''}`}
+                aria-label="Menu" aria-expanded={menuOpen}
+                onClick={() => setMenuOpen((o) => !o)}
+              >
+                <span /><span /><span />
+              </button>
             </div>
           </div>
         </header>
       </div>
+
+      <div className={`mm-backdrop${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(false)} />
+      <nav className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-label="Mobile">
+        <button className="mm-close" aria-label="Close menu" onClick={() => setMenuOpen(false)}>×</button>
+        {NAV.map((n) => (
+          <Link key={n.href} href={n.href} className={pathname === n.href ? 'active' : ''}>{t(n.key)}</Link>
+        ))}
+        <Link className="btn btn-primary" href="/contact">{t('nav.cta')}</Link>
+      </nav>
 
       <main id="view">{children}</main>
 
