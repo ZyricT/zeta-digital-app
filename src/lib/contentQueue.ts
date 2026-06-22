@@ -302,4 +302,256 @@ Mahu pelan SEO jelas yang bertokok bulan demi bulan? Mulakan dengan audit percum
       },
     },
   },
+
+  // ── SET 4 — Email Retargeting / Marketing ───────────────────────────────
+  {
+    group: 'email-retargeting-2026',
+    category: { title: 'Email Marketing', slug: 'email-marketing' },
+    unsplashQuery: 'email marketing laptop inbox',
+    posts: {
+      en: {
+        title: 'Email Retargeting in Malaysia: Turning Cold Leads into Buyers on Autopilot',
+        slug: 'email-retargeting-malaysia',
+        excerpt: 'Most leads are not ready to buy on day one. Automated email sequences keep your brand in front of them until they are — here is how Malaysian businesses do it.',
+        seoTitle: 'Email Retargeting Malaysia 2026 | Automated Lead Nurture — Zeta Digital',
+        seoDescription: 'How Malaysian businesses use automated email sequences to nurture cold leads into buyers: segmentation, lifecycle flows, A/B testing and win-back campaigns.',
+        alt: 'Marketer reviewing an automated email marketing sequence on a laptop',
+        body: `Most people who enquire are not ready to buy today — but many will in the weeks ahead. Without follow-up, those leads quietly go cold. Automated email retargeting keeps your brand in front of them with the right message at the right time, until they are ready to buy.
+
+## Why follow-up beats one-off blasts
+A single newsletter reaches everyone the same way. A sequence reacts to behaviour — what someone opened, clicked, or ignored — and sends the next message accordingly. That relevance is why automated flows consistently outperform one-off email blasts.
+
+## The flows every business should run
+A welcome sequence for new leads, a nurture flow that educates and builds trust, a re-engagement flow for people who went quiet, and a win-back flow for past customers. Segment by interest and budget so each list gets a message that actually fits.
+
+## Measure, test, improve
+Track open rates, clicks, and replies — but optimise toward leads and sales, not vanity metrics. A/B test subject lines and offers, keep what works, and let the flows compound while you focus on the business.
+
+Want an email engine that nurtures leads while you sleep? Start with a free audit and we will map the flows for your business.`,
+        faqs: [
+          { question: 'What is email retargeting?', answer: 'Automated email sequences that follow up with leads based on their behaviour — keeping your brand in front of them until they are ready to buy, without manual sending.' },
+          { question: 'Does email marketing still work in 2026?', answer: 'Yes — well-segmented, automated email consistently delivers one of the highest returns in marketing because it reaches people who already showed interest.' },
+          { question: 'How many emails should a nurture sequence have?', answer: 'It varies by business, but a typical nurture flow runs several emails over a few weeks, spaced to stay helpful rather than pushy, and branches based on engagement.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚的邮件再营销:让冷名单自动变成买家',
+        slug: 'email-retargeting-malaysia-zh',
+        excerpt: '多数名单第一天不会买,但几周后很多会。自动邮件序列让你的品牌一直出现在他们眼前,直到他们准备好——看马来西亚企业怎么做。',
+        seoTitle: '邮件再营销 马来西亚 2026 | 自动培育名单 — Zeta Digital',
+        seoDescription: '马来西亚企业如何用自动邮件序列把冷名单培育成买家:分群、生命周期流程、A/B 测试与召回活动。',
+        alt: '营销人员在笔记本电脑上查看自动邮件营销序列',
+        body: `多数咨询的人今天不会买,但未来几周里很多人会。没有跟进,这些名单就悄悄变冷。自动邮件再营销在对的时间用对的信息让你的品牌一直出现,直到他们准备好成交。
+
+## 为什么跟进胜过群发
+单封通讯对所有人一个样。序列会根据行为反应——谁打开、点击、忽略——再决定下一封发什么。正是这种相关性,让自动流程持续胜过一次性群发。
+
+## 每家企业都该跑的流程
+给新名单的欢迎序列、教育并建立信任的培育流程、对沉默用户的重新激活流程、对老客户的召回流程。按兴趣和预算分群,让每个名单收到真正合适的信息。
+
+## 衡量、测试、优化
+看打开率、点击、回复——但要朝着名单和成交优化,而不是虚荣数字。A/B 测试标题和优惠,保留有效的,让流程复利增长,而你专注做生意。
+
+想要一个在你睡觉时也在培育名单的邮件引擎?先来个免费诊断,我们帮你规划流程。`,
+        faqs: [
+          { question: '什么是邮件再营销?', answer: '根据名单行为自动跟进的邮件序列——让品牌一直出现在他们眼前,直到他们准备好购买,无需人工发送。' },
+          { question: '2026 年邮件营销还有用吗?', answer: '有用——分群好、自动化的邮件,回报率一直是营销里最高之一,因为它触达的是已经表现出兴趣的人。' },
+          { question: '培育序列要发几封邮件?', answer: '因业务而异,但典型培育流程在几周内发数封,间隔合理、有帮助而非催促,并根据互动分支。' },
+        ],
+      },
+      ms: {
+        title: 'Email Retargeting di Malaysia: Menukar Lead Dingin Jadi Pembeli Secara Automatik',
+        slug: 'email-retargeting-malaysia-ms',
+        excerpt: 'Kebanyakan lead tidak bersedia membeli pada hari pertama — tetapi ramai akan dalam minggu mendatang. Urutan emel automatik mengekalkan jenama anda di depan mereka.',
+        seoTitle: 'Email Retargeting Malaysia 2026 | Pemupukan Lead Automatik — Zeta Digital',
+        seoDescription: 'Bagaimana perniagaan Malaysia guna urutan emel automatik memupuk lead dingin jadi pembeli: segmentasi, aliran kitaran hayat, ujian A/B dan kempen win-back.',
+        alt: 'Pemasar menyemak urutan pemasaran emel automatik pada komputer riba',
+        body: `Kebanyakan yang bertanya belum bersedia membeli hari ini — tetapi ramai akan dalam minggu mendatang. Tanpa susulan, lead itu diam-diam menjadi dingin. Email retargeting automatik mengekalkan jenama anda di depan mereka dengan mesej yang betul pada masa yang betul, sehingga mereka bersedia membeli.
+
+## Kenapa susulan mengalahkan blast sekali
+Satu newsletter sampai kepada semua orang dengan cara sama. Urutan bertindak balas kepada tingkah laku — apa yang dibuka, diklik, atau diabaikan — dan menghantar mesej seterusnya mengikutnya. Relevan itulah sebab aliran automatik sentiasa mengatasi blast emel sekali.
+
+## Aliran yang setiap perniagaan patut jalankan
+Urutan selamat datang untuk lead baharu, aliran pemupukan yang mendidik dan membina kepercayaan, aliran penglibatan semula untuk yang senyap, dan aliran win-back untuk bekas pelanggan. Segmen ikut minat dan bajet supaya setiap senarai dapat mesej yang sesuai.
+
+## Ukur, uji, perbaiki
+Jejak kadar buka, klik dan balasan — tetapi optimum ke arah lead dan jualan, bukan metrik kosong. Uji A/B tajuk dan tawaran, kekalkan yang berkesan, dan biar aliran bertokok sementara anda fokus pada perniagaan.
+
+Mahu enjin emel yang memupuk lead sementara anda tidur? Mulakan dengan audit percuma dan kami petakan aliran untuk perniagaan anda.`,
+        faqs: [
+          { question: 'Apa itu email retargeting?', answer: 'Urutan emel automatik yang susuli lead berdasarkan tingkah laku mereka — mengekalkan jenama anda di depan mereka sehingga bersedia membeli, tanpa penghantaran manual.' },
+          { question: 'Adakah pemasaran emel masih berkesan pada 2026?', answer: 'Ya — emel automatik yang disegmen dengan baik sentiasa memberi salah satu pulangan tertinggi kerana ia menjangkau orang yang sudah menunjukkan minat.' },
+          { question: 'Berapa emel patut ada dalam urutan pemupukan?', answer: 'Bergantung pada perniagaan, tetapi aliran pemupukan biasa berjalan beberapa emel dalam beberapa minggu, berjarak supaya membantu bukan memaksa, dan bercabang ikut penglibatan.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 5 — Agentic AI Automation ───────────────────────────────────────
+  {
+    group: 'agentic-ai-2026',
+    category: { title: 'AI Automation', slug: 'ai-automation' },
+    unsplashQuery: 'artificial intelligence automation technology',
+    posts: {
+      en: {
+        title: 'Agentic AI for Marketing: How Malaysian Businesses Automate Lead Handling 24/7',
+        slug: 'agentic-ai-marketing-malaysia',
+        excerpt: 'Agentic AI does not just answer — it acts. It qualifies leads, books appointments and follows up around the clock. Here is what that means for Malaysian businesses.',
+        seoTitle: 'Agentic AI Marketing Malaysia 2026 | 24/7 Lead Automation — Zeta Digital',
+        seoDescription: 'How Malaysian businesses use Agentic AI to qualify leads, book appointments and follow up automatically 24/7 — AI that takes action, not just answers questions.',
+        alt: 'Abstract visual of AI automation technology and data',
+        body: `Most "AI" tools just answer questions. Agentic AI goes further — it takes actions toward a goal. For marketing, that means an AI agent that qualifies a lead, books the appointment, updates your records, and follows up if the lead goes quiet, all without a human touching it.
+
+## From chatbot to agent
+A chatbot replies. An agent decides and acts: it reads the conversation, works out intent, checks your calendar, books the slot, and logs the lead to your database. The difference is the agent completes the task, not just the reply.
+
+## Where it pays off fastest
+The biggest wins are after hours and at scale — when leads arrive faster than a human team can respond. The agent handles the routine qualifying and booking 24/7, and escalates real, high-value buyers to your team with the context already gathered.
+
+## Human strategy, AI execution
+AI is not a replacement for strategy, relationships, or creative — it is the tireless operator that runs the repetitive work underneath. Pair a clear strategy with AI execution and your marketing runs around the clock at a fraction of the operating cost.
+
+Want AI agents that handle leads while your team sleeps? Start with a free audit and we will map it for your business.`,
+        faqs: [
+          { question: 'What is Agentic AI?', answer: 'AI that takes actions toward a goal — not just answering questions, but qualifying leads, booking appointments, updating records and following up automatically.' },
+          { question: 'How is Agentic AI different from a chatbot?', answer: 'A chatbot replies to messages; an agent completes tasks — it decides, checks your calendar, books the slot, logs the lead and escalates serious buyers to your team.' },
+          { question: 'Will Agentic AI replace my marketing team?', answer: 'No — it handles repetitive work 24/7 so your team can focus on strategy, relationships and creative. The best results come from human strategy plus AI execution.' },
+        ],
+      },
+      zh: {
+        title: '营销用的 Agentic AI:马来西亚企业如何 24 小时自动处理名单',
+        slug: 'agentic-ai-marketing-malaysia-zh',
+        excerpt: 'Agentic AI 不只是回答,它会行动——筛选名单、预约、全天候跟进。看这对马来西亚企业意味着什么。',
+        seoTitle: 'Agentic AI 营销 马来西亚 2026 | 24小时名单自动化 — Zeta Digital',
+        seoDescription: '马来西亚企业如何用 Agentic AI 全天候筛选名单、自动预约与跟进——会"行动"而不只是回答问题的 AI。',
+        alt: 'AI 自动化技术与数据的抽象视觉',
+        body: `多数"AI"工具只是回答问题。Agentic AI 更进一步——它会朝目标采取行动。对营销来说,就是一个 AI 智能体:筛选名单、预约、更新记录、名单沉默时还会跟进,全程不用人碰。
+
+## 从聊天机器人到智能体
+聊天机器人是回复;智能体是决策并行动:它读懂对话、判断意向、查你的日历、订下时段、把名单存进数据库。区别在于智能体把任务"做完",而不只是回一句。
+
+## 哪里见效最快
+最大的收益在下班后和规模化时——名单来得比人工团队能回的还快。智能体全天候处理常规的筛选和预约,并把真正高价值的买家连同已收集的背景转给你的团队。
+
+## 人做策略,AI 做执行
+AI 不取代策略、关系或创意——它是底层不知疲倦的操作员,跑重复的活。把清晰策略配上 AI 执行,你的营销以极低运营成本全天候运转。
+
+想要在团队睡觉时也处理名单的 AI 智能体?先来个免费诊断,我们帮你规划。`,
+        faqs: [
+          { question: '什么是 Agentic AI?', answer: '会朝目标采取行动的 AI——不只是回答问题,还会筛选名单、预约、更新记录并自动跟进。' },
+          { question: 'Agentic AI 和聊天机器人有何不同?', answer: '聊天机器人回复消息;智能体完成任务——它决策、查日历、订时段、存名单,并把认真的买家转给你的团队。' },
+          { question: 'Agentic AI 会取代我的营销团队吗?', answer: '不会——它全天候处理重复工作,让团队专注策略、关系与创意。最好的结果来自人做策略 + AI 做执行。' },
+        ],
+      },
+      ms: {
+        title: 'Agentic AI untuk Pemasaran: Cara Perniagaan Malaysia Automasikan Lead 24/7',
+        slug: 'agentic-ai-marketing-malaysia-ms',
+        excerpt: 'Agentic AI bukan sekadar menjawab — ia bertindak. Ia menilai lead, menempah temujanji dan susulan sepanjang masa. Begini maksudnya untuk perniagaan Malaysia.',
+        seoTitle: 'Agentic AI Pemasaran Malaysia 2026 | Automasi Lead 24/7 — Zeta Digital',
+        seoDescription: 'Bagaimana perniagaan Malaysia guna Agentic AI untuk menilai lead, menempah temujanji dan susulan automatik 24/7 — AI yang bertindak, bukan sekadar menjawab.',
+        alt: 'Visual abstrak teknologi automasi AI dan data',
+        body: `Kebanyakan alat "AI" hanya menjawab soalan. Agentic AI melangkah lebih jauh — ia mengambil tindakan ke arah matlamat. Untuk pemasaran, ia bermakna ejen AI yang menilai lead, menempah temujanji, mengemas kini rekod, dan susulan jika lead senyap, tanpa manusia menyentuhnya.
+
+## Daripada chatbot ke ejen
+Chatbot membalas. Ejen membuat keputusan dan bertindak: ia membaca perbualan, memahami niat, menyemak kalendar anda, menempah slot, dan log lead ke pangkalan data. Bezanya ejen menyelesaikan tugas, bukan sekadar balasan.
+
+## Di mana ia paling berbaloi
+Kemenangan terbesar selepas waktu kerja dan pada skala — bila lead tiba lebih pantas daripada pasukan manusia boleh balas. Ejen mengendalikan penilaian dan tempahan rutin 24/7, dan naikkan pembeli bernilai tinggi kepada pasukan anda dengan konteks sudah dikumpul.
+
+## Strategi manusia, pelaksanaan AI
+AI bukan ganti strategi, hubungan atau kreatif — ia operator tak kenal penat yang menjalankan kerja berulang di bawah. Gandingkan strategi jelas dengan pelaksanaan AI dan pemasaran anda berjalan sepanjang masa pada kos operasi yang jauh lebih rendah.
+
+Mahu ejen AI yang mengendalikan lead sementara pasukan anda tidur? Mulakan dengan audit percuma dan kami petakan untuk perniagaan anda.`,
+        faqs: [
+          { question: 'Apa itu Agentic AI?', answer: 'AI yang mengambil tindakan ke arah matlamat — bukan sekadar menjawab, tetapi menilai lead, menempah temujanji, mengemas kini rekod dan susulan automatik.' },
+          { question: 'Bagaimana Agentic AI berbeza daripada chatbot?', answer: 'Chatbot membalas mesej; ejen menyelesaikan tugas — ia membuat keputusan, menyemak kalendar, menempah slot, log lead dan naikkan pembeli serius kepada pasukan anda.' },
+          { question: 'Adakah Agentic AI akan menggantikan pasukan pemasaran saya?', answer: 'Tidak — ia mengendalikan kerja berulang 24/7 supaya pasukan anda fokus pada strategi, hubungan dan kreatif. Hasil terbaik datang dari strategi manusia campur pelaksanaan AI.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 6 — Local SEO / Google Business Profile ─────────────────────────
+  {
+    group: 'local-seo-2026',
+    category: { title: 'Local SEO', slug: 'local-seo' },
+    unsplashQuery: 'local business storefront map location',
+    posts: {
+      en: {
+        title: 'Local SEO in Malaysia: How to Get Found by Nearby Customers in 2026',
+        slug: 'local-seo-malaysia',
+        excerpt: 'When someone nearby searches for what you sell, local SEO decides whether they find you or a competitor. Here is how Malaysian businesses win the local pack.',
+        seoTitle: 'Local SEO Malaysia 2026 | Get Found by Nearby Customers — Zeta Digital',
+        seoDescription: 'How Malaysian businesses win local search: a complete Google Business Profile, reviews, local landing pages, and consistent NAP — to capture high-intent nearby buyers.',
+        alt: 'Map pin marking a local business location on a phone',
+        body: `When someone searches "near me" or names your town, they are ready to act. Local SEO decides whether that high-intent customer finds your business or a competitor down the road. For most Malaysian businesses, it is one of the fastest, highest-return SEO wins available.
+
+## Start with your Google Business Profile
+A complete, accurate Google Business Profile is the foundation — correct category, hours, photos, services, and a steady stream of reviews. It is what puts you in the map pack and answers most "near me" searches before anyone even clicks your website.
+
+## Reviews and consistency win
+Google trusts businesses that customers trust. Steadily earning genuine reviews — and replying to them — signals quality. Keep your name, address and phone (NAP) identical everywhere online; inconsistencies quietly hurt your local ranking.
+
+## Local pages and content
+If you serve multiple areas, dedicated location pages help you rank in each. Pair them with content that answers local buyer questions, and you build relevance that compounds — capturing the nearest, highest-intent customers month after month.
+
+Want to dominate local search in your area? Start with a free audit and we will map it for your business.`,
+        faqs: [
+          { question: 'What is local SEO?', answer: 'Optimising your online presence — Google Business Profile, reviews, location pages and consistent business details — so nearby customers find you when they search.' },
+          { question: 'Is a Google Business Profile free?', answer: 'Yes, creating and managing a Google Business Profile is free, and it is one of the highest-impact local SEO steps a Malaysian business can take.' },
+          { question: 'How important are reviews for local SEO?', answer: 'Very — a steady stream of genuine reviews, with replies, signals trust to Google and customers and strongly influences who appears in the local map pack.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚本地 SEO:2026 年如何被附近客户找到',
+        slug: 'local-seo-malaysia-zh',
+        excerpt: '当附近有人搜索你卖的东西,本地 SEO 决定他们找到你还是对手。看马来西亚企业怎么赢下"地图三位"。',
+        seoTitle: '本地 SEO 马来西亚 2026 | 被附近客户找到 — Zeta Digital',
+        seoDescription: '马来西亚企业如何赢下本地搜索:完整的 Google 商家资料、评价、本地落地页与一致的名址电话,抓住高意向的附近买家。',
+        alt: '手机上标注本地商家位置的地图图钉',
+        body: `当有人搜"附近"或写出你所在城镇时,他们已经准备好行动。本地 SEO 决定这个高意向客户找到你、还是隔壁的对手。对多数马来西亚企业,这是见效最快、回报最高的 SEO 之一。
+
+## 从 Google 商家资料开始
+完整、准确的 Google 商家资料是基础——正确的类别、营业时间、照片、服务,加上稳定的评价。它让你进入地图三位,在别人还没点进网站前就回答了大多数"附近"搜索。
+
+## 评价与一致性取胜
+Google 信任客户信任的商家。稳定地获得真实评价并回复,传递的是品质信号。把你的名称、地址、电话(NAP)在全网保持完全一致;不一致会悄悄拉低本地排名。
+
+## 本地页面与内容
+如果你服务多个区域,专门的地点页面帮你在每个区排名。配上回答本地买家问题的内容,你建立的相关性会复利增长——月复一月抓住最近、意向最高的客户。
+
+想在你的区域称霸本地搜索?先来个免费诊断,我们帮你规划。`,
+        faqs: [
+          { question: '什么是本地 SEO?', answer: '优化你的线上呈现——Google 商家资料、评价、地点页面和一致的商家信息——让附近客户搜索时能找到你。' },
+          { question: 'Google 商家资料免费吗?', answer: '免费——创建和管理 Google 商家资料是免费的,也是马来西亚企业能做的影响力最大的本地 SEO 之一。' },
+          { question: '评价对本地 SEO 有多重要?', answer: '非常重要——稳定的真实评价加上回复,向 Google 和客户传递信任,强烈影响谁出现在本地地图三位。' },
+        ],
+      },
+      ms: {
+        title: 'SEO Tempatan di Malaysia: Cara Ditemui Pelanggan Berdekatan pada 2026',
+        slug: 'local-seo-malaysia-ms',
+        excerpt: 'Apabila seseorang berdekatan mencari apa anda jual, SEO tempatan menentukan sama ada mereka jumpa anda atau pesaing. Begini perniagaan Malaysia menang local pack.',
+        seoTitle: 'SEO Tempatan Malaysia 2026 | Ditemui Pelanggan Berdekatan — Zeta Digital',
+        seoDescription: 'Bagaimana perniagaan Malaysia menang carian tempatan: Profil Perniagaan Google lengkap, ulasan, halaman lokasi dan NAP konsisten untuk menangkap pembeli berdekatan.',
+        alt: 'Pin peta menanda lokasi perniagaan tempatan pada telefon',
+        body: `Apabila seseorang mencari "berdekatan" atau menyebut bandar anda, mereka bersedia bertindak. SEO tempatan menentukan sama ada pelanggan niat tinggi itu jumpa perniagaan anda atau pesaing di hujung jalan. Bagi kebanyakan perniagaan Malaysia, ia antara kemenangan SEO terpantas dan berpulangan tertinggi.
+
+## Mula dengan Profil Perniagaan Google
+Profil Perniagaan Google yang lengkap dan tepat ialah asasnya — kategori betul, waktu, foto, servis, dan aliran ulasan yang tetap. Ia yang meletakkan anda dalam map pack dan menjawab kebanyakan carian "berdekatan" sebelum sesiapa klik laman web anda.
+
+## Ulasan dan konsistensi menang
+Google mempercayai perniagaan yang pelanggan percaya. Memperoleh ulasan tulen secara tetap — dan membalasnya — menandakan kualiti. Kekalkan nama, alamat dan telefon (NAP) sama di semua tempat dalam talian; ketidakkonsistenan diam-diam menjejaskan ranking tempatan anda.
+
+## Halaman dan kandungan tempatan
+Jika anda melayani beberapa kawasan, halaman lokasi khusus membantu anda ranking di setiap satu. Gandingkan dengan kandungan yang menjawab soalan pembeli tempatan, dan anda membina relevan yang bertokok — menangkap pelanggan terdekat dengan niat tertinggi bulan demi bulan.
+
+Mahu menguasai carian tempatan di kawasan anda? Mulakan dengan audit percuma dan kami petakan untuk perniagaan anda.`,
+        faqs: [
+          { question: 'Apa itu SEO tempatan?', answer: 'Mengoptimumkan kehadiran dalam talian anda — Profil Perniagaan Google, ulasan, halaman lokasi dan butiran perniagaan konsisten — supaya pelanggan berdekatan jumpa anda apabila mereka mencari.' },
+          { question: 'Adakah Profil Perniagaan Google percuma?', answer: 'Ya, mencipta dan mengurus Profil Perniagaan Google adalah percuma, dan ia antara langkah SEO tempatan paling berimpak untuk perniagaan Malaysia.' },
+          { question: 'Berapa penting ulasan untuk SEO tempatan?', answer: 'Sangat — aliran ulasan tulen yang tetap, dengan balasan, menandakan kepercayaan kepada Google dan pelanggan serta kuat mempengaruhi siapa muncul dalam map pack tempatan.' },
+        ],
+      },
+    },
+  },
 ]
