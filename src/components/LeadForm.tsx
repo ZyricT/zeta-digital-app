@@ -28,6 +28,7 @@ export default function LeadForm() {
       businessType: String(fd.get('businessType') || ''),
       adBudget: String(fd.get('adBudget') || ''),
       packageInterest: String(fd.get('packageInterest') || ''),
+      website: String(fd.get('website') || ''), // honeypot — humans leave blank
     }
     try {
       const res = await fetch('/api/lead', {
@@ -45,6 +46,9 @@ export default function LeadForm() {
 
   return (
     <form className="form-card reveal" onSubmit={onSubmit}>
+      {/* honeypot: hidden from humans, bots fill it → silently rejected */}
+      <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true"
+        style={{ position: 'absolute', left: '-9999px', width: 1, height: 1, opacity: 0 }} />
       <div className="field"><label>{t('form.name')}</label><input type="text" name="name" placeholder={t('form.namePh')} required /></div>
       <div className="field"><label>{t('form.wa')}</label><input type="tel" name="whatsapp" placeholder="+60 12-345 6789" required /><div className="hint">{t('form.waHint')}</div></div>
       <div className="field"><label>{t('form.email')}</label><input type="email" name="email" placeholder="your@email.com" required /></div>

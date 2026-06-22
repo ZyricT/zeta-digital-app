@@ -253,7 +253,8 @@ function initBg(canvas: HTMLCanvasElement): void {
   const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)); renderer.setSize(window.innerWidth, window.innerHeight)
   const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, .1, 100); camera.position.z = 22
-  const COUNT = 1300, geo = new THREE.BufferGeometry(), pos = new Float32Array(COUNT * 3)
+  const isMobile = window.matchMedia('(max-width:760px)').matches
+  const COUNT = isMobile ? 420 : 1300, geo = new THREE.BufferGeometry(), pos = new Float32Array(COUNT * 3)
   for (let i = 0; i < COUNT * 3; i++) pos[i] = (Math.random() - .5) * 72
   geo.setAttribute('position', new THREE.BufferAttribute(pos, 3))
   const points = new THREE.Points(geo, new THREE.PointsMaterial({ color: 0xD0FF00, size: .09, transparent: true, opacity: .5 })); scene.add(points)

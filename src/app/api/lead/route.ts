@@ -84,6 +84,10 @@ function isEmail(v: string) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) }
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
+    // honeypot: bots fill the hidden "website" field — accept silently, do nothing
+    if (typeof body?.website === 'string' && body.website.trim()) {
+      return NextResponse.json({ success: true }, { status: 200 })
+    }
     const required = ['name', 'whatsapp', 'email', 'businessType', 'adBudget'] as const
     for (const f of required) {
       if (!body?.[f] || typeof body[f] !== 'string' || !body[f].trim()) {
