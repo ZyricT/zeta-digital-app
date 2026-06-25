@@ -22,6 +22,7 @@ export const metadata: Metadata = {
     type: 'website',
   },
   twitter: { card: 'summary_large_image', title: 'Nothing is Impossible — Zeta Digital' },
+  verification: { google: 'ZuCDiII_VpdubbUAn_Vaw90p2cbx85HViTW8YaQ87fY' },
 }
 
 const SERVICES = [
