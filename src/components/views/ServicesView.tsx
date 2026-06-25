@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useLang } from '@/components/LanguageProvider'
 
 export default function ServicesPage() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const html = (k: string) => ({ __html: t(k) })
   return (
     <section className="sec page-hero">
@@ -17,7 +17,7 @@ export default function ServicesPage() {
         </div>
         <div className="reveal-stagger">
           {[1, 2, 3, 4, 5, 6].map((n) => (
-            <Link className="srow" href="/contact" key={n} style={{ textDecoration: 'none' }}>
+            <Link className="srow" href={`/${lang}/contact`} key={n} style={{ textDecoration: 'none' }}>
               <div className="n">0{n}</div>
               <div className="body"><h3>{t(`srv.${n}t`)}</h3><p>{t(`srv.${n}d`)}</p></div>
             </Link>

@@ -162,19 +162,22 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="topbar"><span className="pulse" /><span>{t('topbar')}</span></div>
         <header>
           <div className="wrap nav">
-            <Link href="/" className="logo" aria-label="Zeta Digital"><Logo idSuffix="hdr" /></Link>
+            <Link href={`/${lang}`} className="logo" aria-label="Zeta Digital"><Logo idSuffix="hdr" /></Link>
             <div className="nav-right">
               <nav className="nav-links">
-                {NAV.map((n) => (
-                  <Link key={n.href} href={n.href} className={`navlink${pathname === n.href ? ' active' : ''}`}>{t(n.key)}</Link>
-                ))}
+                {NAV.map((n) => {
+                  const href = n.href === '/blog' ? '/blog' : `/${lang}${n.href}`
+                  return (
+                    <Link key={n.href} href={href} className={`navlink${pathname === href ? ' active' : ''}`}>{t(n.key)}</Link>
+                  )
+                })}
               </nav>
               <div className="langsw">
                 {LANGS.map((l) => (
                   <button key={l} className={lang === l ? 'active' : ''} onClick={() => setLang(l)}>{LANG_LABEL[l]}</button>
                 ))}
               </div>
-              <Link className="btn btn-primary hdr-cta" href="/contact" style={{ padding: '11px 18px' }}>{t('nav.cta')}</Link>
+              <Link className="btn btn-primary hdr-cta" href={`/${lang}/contact`} style={{ padding: '11px 18px' }}>{t('nav.cta')}</Link>
               <button
                 className={`burger${menuOpen ? ' open' : ''}`}
                 aria-label="Menu" aria-expanded={menuOpen}
@@ -190,10 +193,13 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
       <div className={`mm-backdrop${menuOpen ? ' open' : ''}`} onClick={() => setMenuOpen(false)} />
       <nav className={`mobile-menu${menuOpen ? ' open' : ''}`} aria-label="Mobile">
         <button className="mm-close" aria-label="Close menu" onClick={() => setMenuOpen(false)}>×</button>
-        {NAV.map((n) => (
-          <Link key={n.href} href={n.href} className={pathname === n.href ? 'active' : ''}>{t(n.key)}</Link>
-        ))}
-        <Link className="btn btn-primary" href="/contact">{t('nav.cta')}</Link>
+        {NAV.map((n) => {
+          const href = n.href === '/blog' ? '/blog' : `/${lang}${n.href}`
+          return (
+            <Link key={n.href} href={href} className={pathname === href ? 'active' : ''}>{t(n.key)}</Link>
+          )
+        })}
+        <Link className="btn btn-primary" href={`/${lang}/contact`}>{t('nav.cta')}</Link>
       </nav>
 
       <main id="view">{children}</main>
@@ -202,16 +208,16 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
         <div className="wrap">
           <div className="foot-grid">
             <div>
-              <Link href="/" className="logo" aria-label="Zeta Digital"><Logo idSuffix="ft" /></Link>
+              <Link href={`/${lang}`} className="logo" aria-label="Zeta Digital"><Logo idSuffix="ft" /></Link>
               <p style={{ marginTop: 12, color: 'rgba(255,255,255,.3)' }}>{t('foot.tagline')}</p>
               <p style={{ color: 'rgba(255,255,255,.2)' }}>nothingimpossible.com.my</p>
             </div>
             <div>
               <div className="ft">{t('foot.quick')}</div>
-              <Link href="/services">{t('nav.services')}</Link>
-              <Link href="/packages">{t('nav.packages')}</Link>
-              <Link href="/about">{t('nav.about')}</Link>
-              <Link href="/contact">{t('nav.cta')}</Link>
+              <Link href={`/${lang}/services`}>{t('nav.services')}</Link>
+              <Link href={`/${lang}/packages`}>{t('nav.packages')}</Link>
+              <Link href={`/${lang}/about`}>{t('nav.about')}</Link>
+              <Link href={`/${lang}/contact`}>{t('nav.cta')}</Link>
             </div>
             <div>
               <div className="ft">{t('foot.contact')}</div>

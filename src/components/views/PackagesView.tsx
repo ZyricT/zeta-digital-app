@@ -5,7 +5,7 @@ import { useLang } from '@/components/LanguageProvider'
 import PackageCards from '@/components/PackageCards'
 
 export default function PackagesPage() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const html = (k: string) => ({ __html: t(k) })
   return (
     <>
@@ -31,7 +31,7 @@ export default function PackagesPage() {
               <div>{t('free.c1')}</div><div>{t('free.c2')}</div><div>{t('free.c3')}</div><div>{t('free.c4')}</div>
             </div>
             <div className="bonus"><div className="bl">{t('free.bl')}</div><div className="bt">{t('free.bt')}</div></div>
-            <div><Link href="/contact?pkg=audit" className="btn">{t('free.cta')}</Link></div>
+            <div><Link href={`/${lang}/contact?pkg=audit`} className="btn">{t('free.cta')}</Link></div>
           </div>
         </div>
       </section>
