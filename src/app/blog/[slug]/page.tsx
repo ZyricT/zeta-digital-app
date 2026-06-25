@@ -3,6 +3,9 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { getPost, getAllSlugs, getTranslations, urlFor } from '@/sanity/client'
 import PostBody from '@/components/PostBody'
+import { BCP47, type Locale } from '@/lib/locale'
+
+const BLOG = 'https://nothingimpossible.com.my/blog'
 
 export const revalidate = 60
 
@@ -23,13 +26,21 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const title = post.seoTitle || `${post.title} | Zeta Digital`
   const description = post.seoDescription || post.excerpt || ''
   const images = post.mainImage ? [urlFor(post.mainImage).width(1200).height(630).url()] : []
-  const trans = post.translationGroup ? await getTranslations(post.translationGroup).catch(() => []) : []
+  const trans: any[] = post.translationGroup ? await getTranslations(post.translationGroup).catch(() => []) : []
   const languages: Record<string, string> = {}
-  trans.forEach((tr) => { if (tr.language && tr.slug) languages[tr.language] = `https://nothingimpossible.com.my/blog/${tr.slug}` })
+  // self
+  languages[BCP47[(post.language as Locale) || 'en'] || 'en-MY'] = `${BLOG}/${post.slug}`
+  // siblings
+  trans.forEach((tr) => {
+    if (tr.language && tr.slug) languages[BCP47[tr.language as Locale] || tr.language] = `${BLOG}/${tr.slug}`
+  })
+  // x-default → English version if it exists, else this post
+  const en = trans.find((tr) => tr.language === 'en')
+  languages['x-default'] = en?.slug ? `${BLOG}/${en.slug}` : `${BLOG}/${post.slug}`
   return {
     title,
     description,
-    alternates: { canonical: `/blog/${post.slug}`, languages: Object.keys(languages).length ? languages : undefined },
+    alternates: { canonical: `/blog/${post.slug}`, languages },
     openGraph: { title, description, type: 'article', publishedTime: post.publishedAt, images },
     twitter: { card: 'summary_large_image', title, description },
   }
@@ -45,6 +56,7 @@ export default async function PostPage({ params }: Params) {
   if (!post) notFound()
 
   const url = `https://nothingimpossible.com.my/blog/${post.slug}`
+  const L = (post.language as string) || 'en'
   const articleSchema = {
     '@context': 'https://schema.org', '@type': 'Article',
     headline: post.title, description: post.excerpt,
@@ -75,7 +87,7 @@ export default async function PostPage({ params }: Params) {
         {faqSchema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />}
 
         <div style={{ fontFamily: "'Space Mono'", fontSize: 12, color: 'rgba(255,255,255,.4)', marginBottom: 18 }}>
-          <Link href="/">Home</Link> → <Link href="/blog">Blog</Link> → {post.title}
+          <Link href={`/${L}`}>Home</Link> → <Link href="/blog">Blog</Link> → {post.title}
         </div>
         {post.categories?.[0] && <span className="cat">{post.categories[0]}</span>}
         <h1 style={{ fontSize: 'clamp(30px,5vw,52px)', margin: '14px 0 16px' }}>{post.title}</h1>
@@ -104,7 +116,7 @@ export default async function PostPage({ params }: Params) {
 
         <div style={{ marginTop: 48, background: 'rgba(208,255,0,.06)', border: '1px solid rgba(208,255,0,.15)', borderRadius: 16, padding: 32 }}>
           <p style={{ fontSize: 18, marginBottom: 18, color: '#fff' }}>Ready to grow with full-stack digital marketing + AI?</p>
-          <Link href="/contact" className="btn btn-primary">Get a Free Audit →</Link>
+          <Link href={`/${L}/contact`} className="btn btn-primary">Get a Free Audit →</Link>
         </div>
 
         <div style={{ marginTop: 32 }}><Link href="/blog" style={{ color: 'rgba(255,255,255,.55)' }}>← Back to Blog</Link></div>

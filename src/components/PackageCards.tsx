@@ -24,7 +24,7 @@ export default function PackageCards() {
             <ul>{f.map((x, i) => <li key={i}><i>✓</i><span>{x}</span></li>)}</ul>
             <button
               className={`btn ${p.featured ? 'btn-primary' : 'btn-ghost'}`}
-              onClick={() => router.push(`/contact?pkg=${p.pkgval}`)}
+              onClick={() => router.push(`/${lang}/contact?pkg=${p.pkgval}`)}
             >
               {t(ctaKey)} →
             </button>

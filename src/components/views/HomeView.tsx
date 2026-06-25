@@ -17,7 +17,7 @@ const IND = [
 ]
 
 export default function Home() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
   const html = (k: string) => ({ __html: t(k) })
 
   return (
@@ -36,8 +36,8 @@ export default function Home() {
           </h1>
           <p className="lead" style={{ margin: '26px 0 34px' }}>{t('hero.sub')}</p>
           <div style={{ display: 'flex', gap: 14, flexWrap: 'wrap' }}>
-            <Link href="/packages" className="btn btn-primary">{t('hero.cta1')} <span className="arr">→</span></Link>
-            <Link href="/contact" className="btn btn-ghost">{t('hero.cta2')}</Link>
+            <Link href={`/${lang}/packages`} className="btn btn-primary">{t('hero.cta1')} <span className="arr">→</span></Link>
+            <Link href={`/${lang}/contact`} className="btn btn-ghost">{t('hero.cta2')}</Link>
           </div>
           <div className="trust" dangerouslySetInnerHTML={html('hero.trust')} />
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
               <div>{t('free.c1')}</div><div>{t('free.c2')}</div><div>{t('free.c3')}</div><div>{t('free.c4')}</div>
             </div>
             <div className="bonus"><div className="bl">{t('free.bl')}</div><div className="bt">{t('free.bt')}</div></div>
-            <div><Link href="/contact?pkg=audit" className="btn">{t('free.cta')}</Link></div>
+            <div><Link href={`/${lang}/contact?pkg=audit`} className="btn">{t('free.cta')}</Link></div>
           </div>
         </div>
       </section>
