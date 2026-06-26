@@ -1,10 +1,19 @@
 'use client'
 
+import { useEffect } from 'react'
 import Link from 'next/link'
 import { useLang } from '@/components/LanguageProvider'
 
 export default function ThankYouPage() {
-  const { t } = useLang()
+  const { t, lang } = useLang()
+
+  // Fire a conversion event for GTM / Google Ads (lead form completed).
+  useEffect(() => {
+    const w = window as any
+    w.dataLayer = w.dataLayer || []
+    w.dataLayer.push({ event: 'lead_submitted' })
+  }, [])
+
   return (
     <section className="sec page-hero" style={{ minHeight: '80vh', display: 'flex', alignItems: 'center' }}>
       <div className="glow g-lime gtr" />
@@ -17,7 +26,7 @@ export default function ThankYouPage() {
         <div style={{ display: 'flex', gap: 28, flexWrap: 'wrap', justifyContent: 'center', margin: '34px 0', color: 'rgba(255,255,255,.4)', fontSize: 13, fontFamily: "'Space Mono'" }}>
           <span>01 — {t('ty.s1')}</span><span>02 — {t('ty.s2')}</span><span>03 — {t('ty.s3')}</span>
         </div>
-        <Link href="/" className="btn btn-ghost">← {t('ty.back')}</Link>
+        <Link href={`/${lang}`} className="btn btn-ghost">← {t('ty.back')}</Link>
       </div>
     </section>
   )
