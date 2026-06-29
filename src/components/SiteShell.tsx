@@ -226,7 +226,7 @@ export default function SiteShell({ children }: { children: React.ReactNode }) {
               <p style={{ color: 'rgba(255,255,255,.25)' }}>{t('foot.country')}</p>
             </div>
           </div>
-          <div className="foot-bottom"><span>{t('foot.copy')}</span><span>{t('foot.legal')}</span></div>
+          <div className="foot-bottom"><span>{t('foot.copy')}</span><span><Link href="/privacy">Privacy Policy</Link> · <Link href="/terms">Terms</Link></span></div>
         </div>
       </footer>
 

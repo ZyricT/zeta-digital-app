@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { LOCALES } from '@/lib/locale'
 
 // Routes that are NOT locale-prefixed (kept at their own URLs).
-const EXCLUDE = ['/api', '/studio', '/blog', '/thank-you', '/_next']
+const EXCLUDE = ['/api', '/studio', '/blog', '/thank-you', '/privacy', '/terms', '/_next']
 
 export function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
