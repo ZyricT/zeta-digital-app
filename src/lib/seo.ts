@@ -53,15 +53,15 @@ const META: Record<string, Record<Locale, MetaText>> = {
   case: {
     en: {
       title: 'Case Studies — Real Digital Marketing Results Malaysia | Zeta Digital',
-      description: 'Real results from full-stack digital marketing for Malaysian businesses across F&B, beauty, healthcare, real estate and insurance.',
+      description: 'Real results from full-stack digital marketing in Malaysia — from scaling a used-phone retailer to 100K+ monthly leads to repositioning a Sabah travel brand. SEO, Google Ads, Meta Ads, WhatsApp AI and Agentic automation.',
     },
     zh: {
       title: '案例研究 — 马来西亚真实数码营销成果 | Zeta Digital',
-      description: '为马来西亚餐饮、美容、医疗、房产与保险行业做全栈数码营销的真实成果。',
+      description: '马来西亚全栈数码营销的真实成果——从把二手手机品牌做到每月 10 万+ leads,到为沙巴旅游品牌重新定位。SEO、Google Ads、Meta Ads、WhatsApp AI 与 Agentic 自动化。',
     },
     ms: {
       title: 'Kajian Kes — Hasil Pemasaran Digital Sebenar Malaysia | Zeta Digital',
-      description: 'Hasil sebenar pemasaran digital full-stack untuk perniagaan Malaysia dalam F&B, kecantikan, kesihatan, hartanah dan insurans.',
+      description: 'Hasil sebenar pemasaran digital full-stack di Malaysia — daripada meningkatkan peruncit telefon terpakai ke 100K+ lead sebulan, hingga reposisi jenama pelancongan Sabah. SEO, Google Ads, Meta Ads, WhatsApp AI & automasi Agentic.',
     },
   },
   about: {
