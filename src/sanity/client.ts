@@ -39,6 +39,17 @@ export async function getAllSlugs(): Promise<{ slug: string }[]> {
   return client.fetch(`*[_type == "post" && defined(slug.current)]{ "slug": slug.current }`)
 }
 
+export async function getCaseStudies(lang: string) {
+  const language = ['en', 'zh', 'ms'].includes(lang) ? lang : 'en'
+  return client.fetch(
+    `*[_type == "caseStudy" && language == $language] | order(coalesce(order, 999) asc, client asc){
+      _id, client, industry, packageName, headline, summary, order,
+      metrics[]{ value, label }, challenge, approach,
+      testimonialQuote, testimonialAuthor, testimonialRole }`,
+    { language }
+  )
+}
+
 export async function getTranslations(group: string): Promise<{ slug: string; language: string }[]> {
   if (!group) return []
   return client.fetch(

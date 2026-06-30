@@ -57,4 +57,39 @@ const post = defineType({
   preview: { select: { title: 'title', subtitle: 'publishedAt' } },
 })
 
-export const schemaTypes: SchemaTypeDefinition[] = [siteSettings, post, category]
+const caseStudy = defineType({
+  name: 'caseStudy',
+  title: 'Case Study',
+  type: 'document',
+  fields: [
+    defineField({
+      name: 'language', title: 'Language', type: 'string',
+      options: { list: [{ title: 'English', value: 'en' }, { title: '简体中文', value: 'zh' }, { title: 'Bahasa Melayu', value: 'ms' }], layout: 'radio' },
+      initialValue: 'en', validation: (r) => r.required(),
+    }),
+    defineField({ name: 'translationGroup', title: 'Translation Group', type: 'string', description: 'Same value across EN/ZH/MS versions of one case (e.g. agoh, afft).', validation: (r) => r.required() }),
+    defineField({ name: 'order', title: 'Display order', type: 'number', description: 'Lower shows first.', initialValue: 0 }),
+    defineField({ name: 'client', title: 'Client name', type: 'string', validation: (r) => r.required() }),
+    defineField({ name: 'industry', title: 'Industry', type: 'string', validation: (r) => r.required() }),
+    defineField({ name: 'packageName', title: 'Package', type: 'string' }),
+    defineField({ name: 'headline', title: 'Card headline', type: 'string', validation: (r) => r.required() }),
+    defineField({ name: 'summary', title: 'Card summary', type: 'text', rows: 5 }),
+    defineField({
+      name: 'metrics', title: 'Result metrics', type: 'array',
+      of: [defineArrayMember({
+        type: 'object',
+        fields: [defineField({ name: 'value', type: 'string', title: 'Value (e.g. 10万+)' }), defineField({ name: 'label', type: 'string', title: 'Label' })],
+        preview: { select: { title: 'value', subtitle: 'label' } },
+      })],
+    }),
+    defineField({ name: 'challenge', title: 'Challenge (optional)', type: 'text', rows: 4 }),
+    defineField({ name: 'approach', title: 'What Zeta did (optional)', type: 'text', rows: 4 }),
+    defineField({ name: 'testimonialQuote', title: 'Testimonial quote (optional)', type: 'text', rows: 3 }),
+    defineField({ name: 'testimonialAuthor', title: 'Testimonial author (optional)', type: 'string' }),
+    defineField({ name: 'testimonialRole', title: 'Testimonial author role (optional)', type: 'string' }),
+  ],
+  orderings: [{ title: 'Display order', name: 'orderAsc', by: [{ field: 'order', direction: 'asc' }] }],
+  preview: { select: { title: 'client', subtitle: 'language' } },
+})
+
+export const schemaTypes: SchemaTypeDefinition[] = [siteSettings, post, category, caseStudy]

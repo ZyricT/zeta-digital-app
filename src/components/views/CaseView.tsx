@@ -2,7 +2,21 @@
 
 import { useLang } from '@/components/LanguageProvider'
 
-export default function CasePage() {
+type Metric = { value?: string; label?: string }
+export type CaseStudy = {
+  _id: string
+  client: string
+  industry: string
+  packageName?: string
+  headline: string
+  summary?: string
+  metrics?: Metric[]
+  testimonialQuote?: string
+  testimonialAuthor?: string
+  testimonialRole?: string
+}
+
+export default function CaseView({ cases = [] }: { cases?: CaseStudy[] }) {
   const { t } = useLang()
   const html = (k: string) => ({ __html: t(k) })
   return (
@@ -15,15 +29,31 @@ export default function CasePage() {
           <p className="lead">{t('pg.case.sub')}</p>
         </div>
         <div className="case-grid reveal-stagger">
-          {[1, 2, 3].map((n) => (
-            <div className="case" key={n}>
-              <div className="ind">{t(`pg.case.${n}ind`)}</div>
-              <h3>{t(`pg.case.${n}t`)}</h3>
-              <div className="metrics">
-                <div className="m"><div className="v">{t(`pg.case.${n}m1`)}</div><div className="l">{t(`pg.case.${n}m1l`)}</div></div>
-                <div className="m"><div className="v">{t(`pg.case.${n}m2`)}</div><div className="l">{t(`pg.case.${n}m2l`)}</div></div>
+          {cases.map((c) => (
+            <div className="case" key={c._id}>
+              <div className="ind">{c.industry}</div>
+              <h3>{c.headline}</h3>
+              <div style={{ color: 'rgba(255,255,255,.4)', fontSize: 12, fontFamily: "'Space Mono'", margin: '4px 0 4px' }}>
+                {c.client}{c.packageName ? ` · ${c.packageName}` : ''}
               </div>
-              <p>{t(`pg.case.${n}d`)}</p>
+              {c.metrics && c.metrics.length > 0 && (
+                <div className="metrics">
+                  {c.metrics.map((m, i) => (
+                    <div className="m" key={i}><div className="v">{m.value}</div><div className="l">{m.label}</div></div>
+                  ))}
+                </div>
+              )}
+              {c.summary && <p>{c.summary}</p>}
+              {c.testimonialQuote && (
+                <blockquote style={{ borderLeft: '3px solid #D0FF00', paddingLeft: 16, margin: '16px 0 0', color: 'rgba(255,255,255,.62)', fontStyle: 'italic', fontSize: 14, lineHeight: 1.7 }}>
+                  “{c.testimonialQuote}”
+                  {(c.testimonialAuthor || c.testimonialRole) && (
+                    <footer style={{ marginTop: 8, fontStyle: 'normal', color: 'rgba(255,255,255,.4)', fontSize: 12, fontFamily: "'Space Mono'" }}>
+                      — {c.testimonialAuthor}{c.testimonialRole ? `, ${c.testimonialRole}` : ''}
+                    </footer>
+                  )}
+                </blockquote>
+              )}
             </div>
           ))}
         </div>
