@@ -554,4 +554,748 @@ Mahu menguasai carian tempatan di kawasan anda? Mulakan dengan audit percuma dan
       },
     },
   },
+
+  // ── SET 7 — Medical & Wellness Clinic Marketing ─────────────────────────
+  {
+    group: 'medical-clinic-2026',
+    category: { title: 'Healthcare Marketing', slug: 'healthcare-marketing' },
+    unsplashQuery: 'medical clinic reception appointment',
+    posts: {
+      en: {
+        title: 'Digital Marketing for Medical & Wellness Clinics in Malaysia: Fill Your Appointment Book',
+        slug: 'medical-clinic-marketing-malaysia',
+        excerpt: 'Patients research before they book. Here is how Malaysian medical and wellness clinics use local SEO, compliant ads, WhatsApp and reviews to fill their appointment book.',
+        seoTitle: 'Medical & Wellness Clinic Marketing Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian clinics attract pre-qualified patients: local SEO, Google Business Profile, compliant Google Ads, WhatsApp booking and reviews — managed end to end.',
+        alt: 'Malaysian clinic receptionist booking a patient appointment at the front desk',
+        body: `Almost every patient checks Google, reviews and your clinic's profile before they ever call. If a competitor looks more trustworthy online, they get the booking — even when your care is better. Modern clinic growth in Malaysia is won on the screen first, in the treatment room second.
+
+## Patients research before they book
+For aesthetics, dental, physiotherapy, fertility or wellness, people compare clinics online for days. They read reviews, scan your Google Business Profile, and judge your website in seconds. A clear, trustworthy online presence is what turns that research into a confirmed appointment.
+
+## Compliant ads and local SEO
+Healthcare advertising in Malaysia must follow strict rules — no exaggerated claims or testimonials that breach guidelines. Done properly, compliant Google Ads capture patients searching "clinic near me" with the right intent, while local SEO and a complete Google Business Profile make you the obvious choice in your area.
+
+## Reviews and reputation
+A steady flow of genuine Google reviews, answered professionally, is one of the strongest trust signals a clinic can have. It lifts your ranking in the local map pack and reassures nervous first-time patients that they are in safe hands.
+
+## WhatsApp booking and reminders
+Malaysians book on WhatsApp. An automated assistant that answers enquiries in seconds, books appointments and sends reminders cuts no-shows and frees your front desk — running 24/7, even after the clinic closes.
+
+Want a steady stream of pre-qualified patient enquiries? Start with a free audit and we will map a compliant growth plan for your clinic.`,
+        faqs: [
+          { question: 'Is medical advertising allowed in Malaysia?', answer: 'Yes, but it is tightly regulated. Healthcare and aesthetic advertising must follow the relevant Malaysian guidelines — no exaggerated claims, certain testimonials and before/after content are restricted. A compliant campaign keeps you safe while still attracting patients.' },
+          { question: 'How do clinics get more patients online?', answer: 'A combination of local SEO, a complete Google Business Profile, genuine reviews, compliant ads and fast WhatsApp follow-up. Together they make your clinic the trusted, easy choice when patients search.' },
+          { question: 'How long before a clinic sees results?', answer: 'Compliant Google Ads can bring enquiries within weeks, while SEO and reviews compound over a few months into a steady, lower-cost flow of bookings.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚医疗与健康诊所的数字营销:把预约排满',
+        slug: 'yiliao-zhensuo-marketing-malaysia',
+        excerpt: '病人预约前都会先做功课。看马来西亚医疗与健康诊所如何用本地 SEO、合规广告、WhatsApp 与评价把预约排满。',
+        seoTitle: '马来西亚医疗与健康诊所营销 2026 — Zeta Digital',
+        seoDescription: '马来西亚诊所如何吸引精准病人:本地 SEO、Google 商家资料、合规 Google 广告、WhatsApp 预约与评价,全程托管。',
+        alt: '马来西亚诊所前台正在为病人安排预约',
+        body: `几乎每个病人在打电话前,都会先上 Google、看评价、查你诊所的资料。如果竞争对手在网上看起来更可信,预约就归他 —— 哪怕你的医术更好。今天马来西亚诊所的增长,先在屏幕上分胜负,再在诊室里见真章。
+
+## 病人预约前先做功课
+不管是医美、牙科、物理治疗、生育还是养生,病人会上网比较好几天。他们读评价、看你的 Google 商家资料、几秒内判断你的网站。一个清晰、可信的线上形象,才能把这些功课变成确定的预约。
+
+## 合规广告与本地 SEO
+马来西亚的医疗广告有严格规定 —— 不能夸大疗效、某些见证内容受限制。做对了,合规的 Google 广告能精准抓到搜索"附近诊所"的病人;本地 SEO 加上完整的 Google 商家资料,让你成为区域内的首选。
+
+## 评价与口碑
+源源不断的真实 Google 评价、专业地回复,是诊所最强的信任信号之一。它会提升你在本地地图包(map pack)的排名,也让紧张的初诊病人安心。
+
+## WhatsApp 预约与提醒
+马来西亚人用 WhatsApp 预约。一个能在几秒内回复咨询、自动预约、发送提醒的助手,能减少爽约、解放前台 —— 7×24 运作,诊所关门后也照常。
+
+想要稳定的精准病人咨询?先来个免费诊断,我们帮你的诊所规划一套合规的增长方案。`,
+        faqs: [
+          { question: '马来西亚允许医疗广告吗?', answer: '允许,但监管严格。医疗与医美广告必须遵守相关规定 —— 不能夸大疗效,某些见证和前后对比内容受限。合规的投放既安全又能吸引病人。' },
+          { question: '诊所如何在网上获得更多病人?', answer: '本地 SEO、完整的 Google 商家资料、真实评价、合规广告,加上 WhatsApp 快速跟进。组合起来,让你的诊所成为病人搜索时可信又方便的选择。' },
+          { question: '诊所多久能看到效果?', answer: '合规的 Google 广告几周内就能带来咨询;SEO 和评价则在几个月内累积成稳定、成本更低的预约流。' },
+        ],
+      },
+      ms: {
+        title: 'Pemasaran Digital untuk Klinik Perubatan & Kesihatan di Malaysia: Penuhi Buku Temujanji',
+        slug: 'pemasaran-klinik-perubatan-malaysia',
+        excerpt: 'Pesakit membuat kajian sebelum menempah. Begini klinik perubatan dan kesihatan Malaysia guna SEO tempatan, iklan patuh, WhatsApp dan ulasan untuk penuhkan temujanji.',
+        seoTitle: 'Pemasaran Klinik Perubatan & Kesihatan Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana klinik Malaysia menarik pesakit berkelayakan: SEO tempatan, Profil Perniagaan Google, Google Ads patuh, tempahan WhatsApp dan ulasan — diurus sepenuhnya.',
+        alt: 'Penyambut tetamu klinik Malaysia menempah temujanji pesakit di kaunter hadapan',
+        body: `Hampir setiap pesakit menyemak Google, ulasan dan profil klinik anda sebelum mereka menelefon. Jika pesaing kelihatan lebih dipercayai dalam talian, mereka dapat tempahan itu — walaupun rawatan anda lebih baik. Pertumbuhan klinik moden di Malaysia dimenangi di skrin dahulu, di bilik rawatan kemudian.
+
+## Pesakit membuat kajian sebelum menempah
+Untuk estetik, pergigian, fisioterapi, kesuburan atau kesihatan, orang membandingkan klinik dalam talian selama berhari-hari. Mereka membaca ulasan, meneliti Profil Perniagaan Google anda, dan menilai laman web anda dalam beberapa saat. Kehadiran dalam talian yang jelas dan dipercayai menukar kajian itu menjadi temujanji yang disahkan.
+
+## Iklan patuh dan SEO tempatan
+Pengiklanan penjagaan kesihatan di Malaysia mesti mengikut peraturan ketat — tiada dakwaan keterlaluan atau testimoni yang melanggar garis panduan. Dilakukan dengan betul, Google Ads yang patuh menangkap pesakit yang mencari "klinik berdekatan", manakala SEO tempatan dan Profil Perniagaan Google yang lengkap menjadikan anda pilihan jelas di kawasan anda.
+
+## Ulasan dan reputasi
+Aliran ulasan Google tulen yang tetap, dibalas secara profesional, adalah antara isyarat kepercayaan terkuat untuk sebuah klinik. Ia menaikkan kedudukan anda dalam map pack tempatan dan meyakinkan pesakit kali pertama yang gementar.
+
+## Tempahan dan peringatan WhatsApp
+Rakyat Malaysia menempah melalui WhatsApp. Pembantu automatik yang menjawab pertanyaan dalam beberapa saat, menempah temujanji dan menghantar peringatan mengurangkan ketidakhadiran dan membebaskan kaunter hadapan — beroperasi 24/7, walaupun selepas klinik tutup.
+
+Mahu aliran pertanyaan pesakit berkelayakan yang tetap? Mulakan dengan audit percuma dan kami petakan pelan pertumbuhan yang patuh untuk klinik anda.`,
+        faqs: [
+          { question: 'Adakah pengiklanan perubatan dibenarkan di Malaysia?', answer: 'Ya, tetapi dikawal ketat. Pengiklanan perubatan dan estetik mesti mengikut garis panduan Malaysia yang berkaitan — tiada dakwaan keterlaluan, sesetengah testimoni dan kandungan sebelum/selepas adalah terhad. Kempen yang patuh memastikan anda selamat sambil tetap menarik pesakit.' },
+          { question: 'Bagaimana klinik mendapat lebih ramai pesakit dalam talian?', answer: 'Gabungan SEO tempatan, Profil Perniagaan Google lengkap, ulasan tulen, iklan patuh dan susulan WhatsApp pantas. Bersama-sama, ia menjadikan klinik anda pilihan dipercayai dan mudah apabila pesakit mencari.' },
+          { question: 'Berapa lama sebelum klinik nampak hasil?', answer: 'Google Ads yang patuh boleh membawa pertanyaan dalam beberapa minggu, manakala SEO dan ulasan bertokok selama beberapa bulan menjadi aliran tempahan yang tetap dan lebih murah.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 8 — AEO / GEO: Get recommended by AI ────────────────────────────
+  {
+    group: 'aeo-geo-2026',
+    category: { title: 'AEO & GEO', slug: 'aeo-geo' },
+    unsplashQuery: 'artificial intelligence technology search',
+    posts: {
+      en: {
+        title: 'How to Get Your Malaysian Business Recommended by ChatGPT, Perplexity & AI Search',
+        slug: 'get-recommended-by-ai-malaysia',
+        excerpt: 'Customers now ask AI for recommendations. Here is how Malaysian businesses get named by ChatGPT, Perplexity, Gemini and Google AI — the new front page of search.',
+        seoTitle: 'Get Recommended by AI in Malaysia (AEO/GEO 2026) — Zeta Digital',
+        seoDescription: 'How Malaysian businesses become the answer AI engines recommend: structured content, schema, reviews, entity signals and AEO/GEO — the new way customers find you.',
+        alt: 'Person asking an AI assistant for a business recommendation on a phone',
+        body: `More Malaysians now ask ChatGPT, Perplexity or Google's AI "which is the best ___ in KL?" instead of scrolling ten blue links. If AI does not know your business, you are invisible to a fast-growing share of buyers. Answer Engine Optimisation (AEO) and Generative Engine Optimisation (GEO) fix that.
+
+## Search is becoming answers
+Traditional SEO ranks pages; AEO and GEO make your business the answer an AI gives. Instead of competing for a click, you compete to be the name the assistant recommends — often the only one the user ever sees.
+
+## What makes AI recommend you
+AI engines trust clear, structured, consistent information. That means well-structured content that directly answers real questions, schema markup (Organization, FAQ, Review), a consistent business identity across the web, and genuine reviews. The clearer and more credible your footprint, the more likely AI names you.
+
+## Build an entity, not just a website
+AI builds a picture of your business from everywhere it appears — your site, Google Business Profile, directories, mentions and reviews. When all of these agree on who you are, what you do and where, you become a trusted "entity" that AI can confidently recommend.
+
+## Why early movers win in Malaysia
+Most Malaysian businesses have done nothing for AI search yet. The ones that structure their content and signals now are the ones AI will quote for years. It is the same advantage early SEO movers had — only bigger, and earlier.
+
+Want to become the business AI recommends in your industry? Start with a free audit and we will map your AEO/GEO plan.`,
+        faqs: [
+          { question: 'What is AEO and GEO?', answer: 'AEO (Answer Engine Optimisation) and GEO (Generative Engine Optimisation) are about getting your business named in the answers AI engines like ChatGPT, Perplexity and Google AI give — not just ranking a webpage.' },
+          { question: 'How do I get my business mentioned by ChatGPT?', answer: 'Publish clear, structured content that answers real questions, add schema markup, keep your business details consistent everywhere, and build genuine reviews. AI recommends businesses it can clearly understand and trust.' },
+          { question: 'Is AEO different from SEO?', answer: 'They overlap but differ. SEO aims to rank a page in search results; AEO/GEO aims to make your business the answer an AI gives. Doing both future-proofs your visibility.' },
+        ],
+      },
+      zh: {
+        title: '如何让你的马来西亚生意被 ChatGPT、Perplexity 与 AI 搜索推荐',
+        slug: 'rang-ai-tuijian-malaysia',
+        excerpt: '客户现在会问 AI 要推荐。看马来西亚企业如何被 ChatGPT、Perplexity、Gemini 与 Google AI 点名 —— 搜索的新首页。',
+        seoTitle: '让 AI 在马来西亚推荐你的生意(AEO/GEO 2026)— Zeta Digital',
+        seoDescription: '马来西亚企业如何成为 AI 推荐的答案:结构化内容、schema、评价、实体信号与 AEO/GEO —— 客户找到你的新方式。',
+        alt: '有人在手机上向 AI 助手询问商家推荐',
+        body: `越来越多马来西亚人直接问 ChatGPT、Perplexity 或 Google 的 AI"吉隆坡最好的___是哪家?",而不再翻十条蓝色链接。如果 AI 不认识你的生意,你对一群快速增长的买家来说就是隐形的。答案引擎优化(AEO)与生成引擎优化(GEO)正是解法。
+
+## 搜索正在变成"答案"
+传统 SEO 排的是网页;AEO 和 GEO 让你的生意成为 AI 给出的那个答案。你不再是争一个点击,而是争成为助手推荐的那个名字 —— 往往是用户唯一看到的那个。
+
+## 什么让 AI 推荐你
+AI 引擎信任清晰、结构化、一致的信息。这意味着:直接回答真实问题的结构化内容、schema 标记(Organization、FAQ、Review)、全网一致的商家身份,以及真实评价。你的足迹越清晰可信,AI 越可能点你的名。
+
+## 建"实体",而不只是网站
+AI 会从你出现的所有地方拼出对你的认知 —— 网站、Google 商家资料、目录、提及与评价。当这些都对得上你是谁、做什么、在哪里,你就成了一个 AI 能放心推荐的"可信实体"。
+
+## 为什么在马来西亚要先动手
+大多数马来西亚企业还没为 AI 搜索做任何事。现在就把内容和信号结构化的,就是未来几年被 AI 引用的那批。这和当年 SEO 先行者的优势一样 —— 只是更大、更早。
+
+想成为你行业里被 AI 推荐的那家?先来个免费诊断,我们帮你规划 AEO/GEO 方案。`,
+        faqs: [
+          { question: 'AEO 和 GEO 是什么?', answer: 'AEO(答案引擎优化)和 GEO(生成引擎优化)是让你的生意出现在 ChatGPT、Perplexity、Google AI 等给出的答案里,而不只是让网页排名。' },
+          { question: '怎么让 ChatGPT 提到我的生意?', answer: '发布直接回答真实问题的结构化内容、加上 schema 标记、全网保持商家信息一致、积累真实评价。AI 会推荐它能清楚理解又信任的生意。' },
+          { question: 'AEO 和 SEO 不一样吗?', answer: '有重叠但不同。SEO 想让网页在搜索结果排名;AEO/GEO 想让你的生意成为 AI 给出的答案。两者都做,才能为可见度上保险。' },
+        ],
+      },
+      ms: {
+        title: 'Cara Buat Perniagaan Malaysia Anda Dicadangkan oleh ChatGPT, Perplexity & Carian AI',
+        slug: 'dicadangkan-oleh-ai-malaysia',
+        excerpt: 'Pelanggan kini bertanya AI untuk cadangan. Begini perniagaan Malaysia disebut oleh ChatGPT, Perplexity, Gemini dan Google AI — muka depan carian yang baharu.',
+        seoTitle: 'Dicadangkan oleh AI di Malaysia (AEO/GEO 2026) — Zeta Digital',
+        seoDescription: 'Bagaimana perniagaan Malaysia menjadi jawapan yang dicadangkan enjin AI: kandungan berstruktur, schema, ulasan, isyarat entiti dan AEO/GEO.',
+        alt: 'Seseorang bertanya pembantu AI untuk cadangan perniagaan di telefon',
+        body: `Semakin ramai rakyat Malaysia kini bertanya ChatGPT, Perplexity atau AI Google "yang mana ___ terbaik di KL?" dan bukan lagi menatal sepuluh pautan biru. Jika AI tidak kenal perniagaan anda, anda halimunan kepada bahagian pembeli yang berkembang pantas. Answer Engine Optimisation (AEO) dan Generative Engine Optimisation (GEO) menyelesaikannya.
+
+## Carian menjadi jawapan
+SEO tradisional meranking halaman; AEO dan GEO menjadikan perniagaan anda jawapan yang diberi AI. Anda tidak lagi bersaing untuk satu klik, tetapi bersaing menjadi nama yang dicadangkan pembantu itu — selalunya satu-satunya yang dilihat pengguna.
+
+## Apa yang buat AI mencadangkan anda
+Enjin AI mempercayai maklumat yang jelas, berstruktur dan konsisten. Itu bermakna kandungan berstruktur yang menjawab soalan sebenar, penanda schema (Organization, FAQ, Review), identiti perniagaan yang konsisten di seluruh web, dan ulasan tulen. Semakin jelas dan kredibel jejak anda, semakin tinggi kemungkinan AI menyebut anda.
+
+## Bina entiti, bukan sekadar laman web
+AI membina gambaran perniagaan anda daripada setiap tempat ia muncul — laman web, Profil Perniagaan Google, direktori, sebutan dan ulasan. Apabila semuanya bersetuju siapa anda, apa anda buat dan di mana, anda menjadi "entiti" dipercayai yang boleh dicadangkan AI dengan yakin.
+
+## Kenapa penggerak awal menang di Malaysia
+Kebanyakan perniagaan Malaysia belum buat apa-apa untuk carian AI. Yang menstruktur kandungan dan isyarat mereka sekarang ialah yang akan dipetik AI bertahun-tahun. Ia kelebihan sama seperti penggerak awal SEO dulu — cuma lebih besar dan lebih awal.
+
+Mahu jadi perniagaan yang dicadangkan AI dalam industri anda? Mulakan dengan audit percuma dan kami petakan pelan AEO/GEO anda.`,
+        faqs: [
+          { question: 'Apa itu AEO dan GEO?', answer: 'AEO (Answer Engine Optimisation) dan GEO (Generative Engine Optimisation) ialah tentang membuat perniagaan anda disebut dalam jawapan yang diberi enjin AI seperti ChatGPT, Perplexity dan Google AI — bukan sekadar meranking laman web.' },
+          { question: 'Bagaimana perniagaan saya disebut oleh ChatGPT?', answer: 'Terbitkan kandungan berstruktur yang menjawab soalan sebenar, tambah penanda schema, kekalkan butiran perniagaan konsisten di mana-mana, dan bina ulasan tulen. AI mencadangkan perniagaan yang ia boleh fahami dan percayai dengan jelas.' },
+          { question: 'Adakah AEO berbeza daripada SEO?', answer: 'Bertindih tetapi berbeza. SEO menyasar meranking halaman dalam hasil carian; AEO/GEO menyasar menjadikan perniagaan anda jawapan yang diberi AI. Melakukan kedua-duanya melindungi keterlihatan anda untuk masa depan.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 9 — Google Business Profile Optimisation ────────────────────────
+  {
+    group: 'gbp-optimisation-2026',
+    category: { title: 'Google Business Profile', slug: 'google-business-profile' },
+    unsplashQuery: 'google maps local business storefront',
+    posts: {
+      en: {
+        title: 'Google Business Profile Optimisation for Malaysian Businesses: Get Found on Maps & Search',
+        slug: 'google-business-profile-malaysia',
+        excerpt: 'Your Google Business Profile is often the first thing customers see — and it is free. Here is how Malaysian businesses optimise it to win the map pack and the call.',
+        seoTitle: 'Google Business Profile Optimisation Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian businesses optimise their Google Business Profile to rank in the local map pack: categories, photos, reviews, posts and bookings — the cheapest local win.',
+        alt: 'Customer viewing a Malaysian business on Google Maps on a phone',
+        body: `When someone searches "spa near me" or "best cafe in Bangsar", Google shows three local results above everything else — the map pack. Your Google Business Profile decides whether you are one of them. It is the cheapest, highest-impact local marketing a Malaysian business can do, and most do it badly.
+
+## The cheapest local win
+A complete, active Google Business Profile costs nothing and often brings more calls than a website. It puts your name, photos, reviews and directions in front of someone ready to visit or buy — at the exact moment they search nearby.
+
+## Complete and verify everything
+Pick the right primary category, fill every field, add real photos, list services and hours, and verify the profile. Google rewards complete, accurate profiles with higher placement. A half-filled profile quietly loses to a competitor who finished theirs.
+
+## Reviews and posts keep you ranking
+A steady stream of genuine reviews — replied to professionally — is the single biggest lever on local ranking and trust. Regular posts and fresh photos signal that your business is active, which Google favours in the map pack.
+
+## Connect it to bookings and WhatsApp
+Link your profile to a booking action or WhatsApp so an interested searcher becomes an enquiry in one tap. A great profile that leads nowhere wastes the click; a connected one turns it into a customer.
+
+Want to own the map pack in your area? Start with a free audit and we will optimise your Google Business Profile end to end.`,
+        faqs: [
+          { question: 'Is Google Business Profile free?', answer: 'Yes. Creating, verifying and managing a Google Business Profile is completely free, and it is one of the highest-impact local SEO steps a Malaysian business can take.' },
+          { question: 'How do I rank in the Google map pack?', answer: 'Complete and verify your profile, choose the right category, gather genuine reviews and reply to them, add photos and posts regularly, and keep your business details consistent across the web.' },
+          { question: 'How important are reviews for my profile?', answer: 'Very. A steady flow of authentic reviews with replies is one of the strongest signals for both local ranking and customer trust — it heavily influences who appears in the map pack.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚企业的 Google 商家资料优化:让客户在地图和搜索找到你',
+        slug: 'google-shangjia-ziliao-malaysia',
+        excerpt: '你的 Google 商家资料往往是客户看到的第一样东西,而且免费。看马来西亚企业如何优化它,抢下地图包和那一通电话。',
+        seoTitle: 'Google 商家资料优化 马来西亚 2026 — Zeta Digital',
+        seoDescription: '马来西亚企业如何优化 Google 商家资料、抢进本地地图包:类别、照片、评价、贴文与预约 —— 最划算的本地营销。',
+        alt: '客户在手机上通过 Google 地图查看一家马来西亚商家',
+        body: `当有人搜索"附近 spa"或"Bangsar 最好的咖啡馆",Google 会在最上方先显示三个本地结果 —— 也就是地图包(map pack)。你的 Google 商家资料决定你是不是其中之一。这是马来西亚企业能做的最划算、最高回报的本地营销,而多数人都做得很差。
+
+## 最划算的本地胜仗
+一份完整、活跃的 Google 商家资料一分钱不用,带来的来电往往比网站还多。它把你的名字、照片、评价和路线,放在一个准备好上门或购买的人面前 —— 正好在他就近搜索的那一刻。
+
+## 把每一项填满并验证
+选对主类别、填满每个栏位、上传真实照片、列出服务和营业时间,并完成验证。Google 会给完整准确的资料更高的排位。一份只填一半的资料,会悄悄输给把它做完的对手。
+
+## 评价和贴文维持排名
+源源不断的真实评价、专业回复,是本地排名和信任最大的杠杆。定期发贴文和新照片,告诉 Google 你的生意很活跃 —— 这正是地图包偏爱的。
+
+## 接上预约和 WhatsApp
+把资料连到预约按钮或 WhatsApp,让有兴趣的搜索者一键就变成咨询。一份很棒却没有去处的资料浪费了点击;接好的那份,把点击变成客户。
+
+想拿下你区域的地图包?先来个免费诊断,我们帮你把 Google 商家资料从头优化到尾。`,
+        faqs: [
+          { question: 'Google 商家资料免费吗?', answer: '免费。创建、验证和管理 Google 商家资料完全免费,而且是马来西亚企业能做的回报最高的本地 SEO 之一。' },
+          { question: '怎么进 Google 地图包排名?', answer: '把资料填完并验证、选对类别、积累真实评价并回复、定期上传照片和贴文,并保持全网商家信息一致。' },
+          { question: '评价对我的资料有多重要?', answer: '非常重要。稳定的真实评价加上回复,是本地排名和客户信任最强的信号之一,极大影响谁出现在地图包。' },
+        ],
+      },
+      ms: {
+        title: 'Pengoptimuman Profil Perniagaan Google untuk Perniagaan Malaysia: Ditemui di Peta & Carian',
+        slug: 'profil-perniagaan-google-malaysia',
+        excerpt: 'Profil Perniagaan Google anda selalunya perkara pertama dilihat pelanggan — dan ia percuma. Begini perniagaan Malaysia optimumkannya untuk menang map pack dan panggilan.',
+        seoTitle: 'Pengoptimuman Profil Perniagaan Google Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana perniagaan Malaysia optimumkan Profil Perniagaan Google untuk ranking dalam map pack tempatan: kategori, foto, ulasan, pos dan tempahan.',
+        alt: 'Pelanggan melihat perniagaan Malaysia di Google Maps pada telefon',
+        body: `Apabila seseorang mencari "spa berdekatan" atau "kafe terbaik di Bangsar", Google menunjukkan tiga hasil tempatan di atas segalanya — map pack. Profil Perniagaan Google anda menentukan sama ada anda salah satunya. Ia pemasaran tempatan termurah dan berimpak tinggi untuk perniagaan Malaysia, dan kebanyakan buat dengan teruk.
+
+## Kemenangan tempatan termurah
+Profil Perniagaan Google yang lengkap dan aktif tidak berkos apa-apa dan selalu bawa lebih banyak panggilan daripada laman web. Ia meletakkan nama, foto, ulasan dan arah anda di hadapan seseorang yang bersedia melawat atau membeli — tepat pada saat mereka mencari berdekatan.
+
+## Lengkapkan dan sahkan semuanya
+Pilih kategori utama yang betul, isi setiap medan, tambah foto sebenar, senaraikan perkhidmatan dan waktu, dan sahkan profil. Google memberi ganjaran kepada profil lengkap dan tepat dengan kedudukan lebih tinggi. Profil separuh isi senyap-senyap kalah kepada pesaing yang menyiapkannya.
+
+## Ulasan dan pos kekalkan ranking
+Aliran ulasan tulen yang tetap — dibalas secara profesional — ialah tuas terbesar untuk ranking tempatan dan kepercayaan. Pos berkala dan foto baharu menandakan perniagaan anda aktif, yang digemari Google dalam map pack.
+
+## Sambungkan ke tempahan dan WhatsApp
+Pautkan profil anda ke tindakan tempahan atau WhatsApp supaya pencari berminat menjadi pertanyaan dengan satu ketik. Profil hebat yang tiada hala tuju membazirkan klik; yang disambung menukarnya menjadi pelanggan.
+
+Mahu miliki map pack di kawasan anda? Mulakan dengan audit percuma dan kami optimumkan Profil Perniagaan Google anda sepenuhnya.`,
+        faqs: [
+          { question: 'Adakah Profil Perniagaan Google percuma?', answer: 'Ya. Mencipta, mengesahkan dan mengurus Profil Perniagaan Google adalah percuma sepenuhnya, dan ia antara langkah SEO tempatan paling berimpak untuk perniagaan Malaysia.' },
+          { question: 'Bagaimana ranking dalam map pack Google?', answer: 'Lengkapkan dan sahkan profil, pilih kategori betul, kumpul ulasan tulen dan balas, tambah foto dan pos kerap, serta kekalkan butiran perniagaan konsisten di seluruh web.' },
+          { question: 'Berapa penting ulasan untuk profil saya?', answer: 'Sangat. Aliran ulasan tulen yang tetap dengan balasan ialah antara isyarat terkuat untuk ranking tempatan dan kepercayaan pelanggan — ia kuat mempengaruhi siapa muncul dalam map pack.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 10 — Beauty & Aesthetic Clinic Marketing ────────────────────────
+  {
+    group: 'beauty-clinic-2026',
+    category: { title: 'Beauty & Aesthetics', slug: 'beauty-aesthetics' },
+    unsplashQuery: 'beauty aesthetic clinic facial treatment',
+    posts: {
+      en: {
+        title: 'Digital Marketing for Beauty & Aesthetic Clinics in Malaysia: Stay Fully Booked',
+        slug: 'beauty-aesthetic-clinic-marketing-malaysia',
+        excerpt: 'Beauty clients buy with their eyes and book on their phones. Here is how Malaysian aesthetic clinics use social, ads, reviews and WhatsApp to stay fully booked.',
+        seoTitle: 'Beauty & Aesthetic Clinic Marketing Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian beauty and aesthetic clinics fill treatment rooms: Instagram and TikTok content, compliant ads, reviews, WhatsApp booking and client reactivation.',
+        alt: 'Aesthetic clinic therapist performing a facial treatment on a client',
+        body: `Beauty and aesthetic clients decide with their eyes. They scroll Instagram, TikTok and Xiaohongshu, compare looks and reviews, then book whoever feels most trusted and most beautiful. For a Malaysian aesthetic clinic, marketing is the difference between empty chairs and a full diary.
+
+## Clients buy with their eyes
+Strong visual content — real results, clean rooms, happy clients — is what stops the scroll and builds desire. Consistent Instagram and TikTok presence, paired with a polished profile, makes your clinic the one people screenshot and share.
+
+## Compliant ads that still convert
+Aesthetic advertising in Malaysia has rules around claims and before/after content. A campaign that respects them while still showcasing real outcomes captures high-intent clients searching for treatments — without risking your licence or reputation.
+
+## Reviews and reactivation
+Genuine reviews turn browsers into bookings, while an automated reactivation flow brings past clients back for their next session. Most clinics sit on a goldmine of previous customers and never message them — that is easy, profitable revenue left on the table.
+
+## WhatsApp booking that never sleeps
+An automated WhatsApp assistant answers price and availability questions instantly, books the slot and sends reminders that cut no-shows. It works at midnight when clients actually browse — turning interest into a confirmed appointment.
+
+Want a fully booked treatment diary? Start with a free audit and we will map a compliant growth plan for your clinic.`,
+        faqs: [
+          { question: 'How do beauty clinics get more clients in Malaysia?', answer: 'A mix of strong visual content on Instagram and TikTok, compliant ads, genuine reviews, WhatsApp booking and reactivating past clients. Together they keep the treatment diary full.' },
+          { question: 'Can aesthetic clinics run before/after ads in Malaysia?', answer: 'Before/after and certain claims are restricted under Malaysian advertising rules. A compliant approach showcases real outcomes within the guidelines so you attract clients without risking your licence.' },
+          { question: 'What is client reactivation?', answer: 'Automatically messaging past clients to book their next treatment. Most clinics have a large list of previous customers — a simple, well-timed sequence brings a profitable share of them back.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚美容与医美诊所的数字营销:让预约一直满',
+        slug: 'meirong-yimei-marketing-malaysia',
+        excerpt: '美容客户用眼睛买单、用手机预约。看马来西亚医美诊所如何用社媒、广告、评价与 WhatsApp 把预约排满。',
+        seoTitle: '马来西亚美容与医美诊所营销 2026 — Zeta Digital',
+        seoDescription: '马来西亚美容与医美诊所如何把疗程房排满:Instagram 与 TikTok 内容、合规广告、评价、WhatsApp 预约与老客户唤回。',
+        alt: '医美诊所治疗师正在为客户做面部护理',
+        body: `美容与医美客户是用眼睛做决定的。他们刷 Instagram、TikTok 和小红书,比较效果和评价,然后预约那个看起来最可信、最美的一家。对马来西亚医美诊所来说,营销就是空椅子和满档之间的差别。
+
+## 客户用眼睛买单
+强的视觉内容 —— 真实效果、干净的房间、满意的客户 —— 才能让人停下滑动、产生渴望。稳定的 Instagram 和 TikTok 呈现,加上精致的资料,让你的诊所成为人们截图和分享的那一家。
+
+## 合规又能成交的广告
+马来西亚的医美广告对疗效声明和前后对比内容有规定。一个既守规、又能展示真实成果的投放,能抓到正在搜索疗程的高意向客户 —— 而不冒执照和口碑的风险。
+
+## 评价与老客唤回
+真实评价把浏览者变成预约;自动化的唤回流程把老客户带回来做下一次疗程。多数诊所坐拥一座老客户金矿,却从不发讯息 —— 这是白白留在桌上的、好赚的营收。
+
+## 不睡觉的 WhatsApp 预约
+一个自动化的 WhatsApp 助手即时回答价格和档期、订下时段、发提醒减少爽约。它在客户真正会浏览的半夜也照常工作 —— 把兴趣变成确定的预约。
+
+想要一本排满的疗程簿?先来个免费诊断,我们帮你的诊所规划一套合规的增长方案。`,
+        faqs: [
+          { question: '马来西亚美容诊所如何获得更多客户?', answer: 'Instagram 和 TikTok 的强视觉内容、合规广告、真实评价、WhatsApp 预约,再加上唤回老客户。组合起来,让疗程簿一直满。' },
+          { question: '马来西亚医美诊所能投前后对比广告吗?', answer: '前后对比和某些声明在马来西亚广告规定下受限制。合规的做法是在规定内展示真实成果,既吸引客户又不冒执照风险。' },
+          { question: '什么是老客户唤回?', answer: '自动发讯息给老客户、邀他们预约下一次疗程。多数诊所有一大批旧客户 —— 一个简单、时机对的序列,就能把其中可观的一部分带回来。' },
+        ],
+      },
+      ms: {
+        title: 'Pemasaran Digital untuk Klinik Kecantikan & Estetik di Malaysia: Kekal Penuh Tempahan',
+        slug: 'pemasaran-klinik-kecantikan-malaysia',
+        excerpt: 'Pelanggan kecantikan membeli dengan mata dan menempah di telefon. Begini klinik estetik Malaysia guna sosial, iklan, ulasan dan WhatsApp untuk kekal penuh tempahan.',
+        seoTitle: 'Pemasaran Klinik Kecantikan & Estetik Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana klinik kecantikan dan estetik Malaysia penuhkan bilik rawatan: kandungan Instagram dan TikTok, iklan patuh, ulasan, tempahan WhatsApp dan pengaktifan semula pelanggan.',
+        alt: 'Juru rawatan klinik estetik melakukan rawatan muka pada pelanggan',
+        body: `Pelanggan kecantikan dan estetik membuat keputusan dengan mata. Mereka menatal Instagram, TikTok dan Xiaohongshu, membandingkan rupa dan ulasan, kemudian menempah sesiapa yang paling dipercayai dan paling cantik. Untuk klinik estetik Malaysia, pemasaran ialah perbezaan antara kerusi kosong dan diari penuh.
+
+## Pelanggan membeli dengan mata
+Kandungan visual yang kuat — hasil sebenar, bilik bersih, pelanggan gembira — yang menghentikan tatalan dan membina keinginan. Kehadiran Instagram dan TikTok yang konsisten, digandingkan profil kemas, menjadikan klinik anda yang orang tangkap layar dan kongsi.
+
+## Iklan patuh yang tetap menukar
+Pengiklanan estetik di Malaysia ada peraturan tentang dakwaan dan kandungan sebelum/selepas. Kempen yang menghormatinya sambil tetap menonjolkan hasil sebenar menangkap pelanggan niat tinggi yang mencari rawatan — tanpa membahayakan lesen atau reputasi anda.
+
+## Ulasan dan pengaktifan semula
+Ulasan tulen menukar penyemak menjadi tempahan, manakala aliran pengaktifan semula automatik membawa pelanggan lama kembali untuk sesi seterusnya. Kebanyakan klinik duduk atas lombong emas pelanggan terdahulu dan tidak pernah menghubungi mereka — itu hasil mudah dan menguntungkan yang ditinggalkan.
+
+## Tempahan WhatsApp yang tidak pernah tidur
+Pembantu WhatsApp automatik menjawab soalan harga dan ketersediaan serta-merta, menempah slot dan menghantar peringatan yang mengurangkan ketidakhadiran. Ia berfungsi pada tengah malam apabila pelanggan benar-benar menyemak — menukar minat menjadi temujanji yang disahkan.
+
+Mahu diari rawatan yang penuh tempahan? Mulakan dengan audit percuma dan kami petakan pelan pertumbuhan yang patuh untuk klinik anda.`,
+        faqs: [
+          { question: 'Bagaimana klinik kecantikan dapat lebih ramai pelanggan di Malaysia?', answer: 'Gabungan kandungan visual kuat di Instagram dan TikTok, iklan patuh, ulasan tulen, tempahan WhatsApp dan mengaktifkan semula pelanggan lama. Bersama-sama, ia mengekalkan diari rawatan penuh.' },
+          { question: 'Bolehkah klinik estetik jalankan iklan sebelum/selepas di Malaysia?', answer: 'Kandungan sebelum/selepas dan dakwaan tertentu adalah terhad di bawah peraturan pengiklanan Malaysia. Pendekatan patuh menonjolkan hasil sebenar dalam garis panduan supaya anda menarik pelanggan tanpa membahayakan lesen.' },
+          { question: 'Apa itu pengaktifan semula pelanggan?', answer: 'Menghantar mesej automatik kepada pelanggan lama untuk menempah rawatan seterusnya. Kebanyakan klinik mempunyai senarai besar pelanggan terdahulu — urutan ringkas pada masa yang tepat membawa sebahagian besar mereka kembali.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 11 — Real Estate Digital Marketing ──────────────────────────────
+  {
+    group: 'real-estate-2026',
+    category: { title: 'Real Estate Marketing', slug: 'real-estate-marketing' },
+    unsplashQuery: 'real estate property keys agent',
+    posts: {
+      en: {
+        title: 'Real Estate Digital Marketing in Malaysia: How to Get High-Intent Property Leads',
+        slug: 'real-estate-digital-marketing-malaysia',
+        excerpt: 'Most property leads are tyre-kickers. Here is how Malaysian agents and developers use targeted ads, lead scoring and WhatsApp automation to get buyers who are ready.',
+        seoTitle: 'Real Estate Digital Marketing Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian property agents and developers generate high-intent buyer leads: targeted Google and Meta ads, lead scoring, WhatsApp follow-up and retargeting.',
+        alt: 'Property agent handing over keys to a new home buyer',
+        body: `In property, the problem is rarely too few leads — it is too many bad ones. Agents and developers burn hours chasing tyre-kickers while ready buyers slip away in a slow WhatsApp reply. Modern real estate marketing in Malaysia is about generating the right leads and responding before a competitor does.
+
+## Quality leads beat volume
+A flood of cheap leads that never buy costs more than it earns. Targeted Google and Meta campaigns — aimed at the right location, price band and buyer profile — bring fewer but far better enquiries. The goal is a pipeline of people actually ready to view and buy.
+
+## Capture intent at the right moment
+Buyers search "condo for sale in Cyberjaya" or browse projects on Facebook for weeks. Search ads catch them at the decision point; Meta and retargeting keep your listing in front of them until they enquire. Each channel plays a role in moving a buyer from curious to committed.
+
+## Score and route leads automatically
+Not every lead deserves the same attention. Automated lead scoring flags the hottest enquiries so agents call them first, while slower leads are nurtured automatically — no one is dropped, and your best time goes to the buyers most likely to close.
+
+## WhatsApp follow-up that wins the deal
+Speed wins property deals. An automated WhatsApp assistant replies in seconds, qualifies the buyer, shares the listing and books a viewing — 24/7. The agent who answers first usually wins, and automation makes sure that is always you.
+
+Want a pipeline of high-intent property buyers? Start with a free audit and we will map your lead engine.`,
+        faqs: [
+          { question: 'How do property agents get better leads in Malaysia?', answer: 'By targeting ads to the right location, price range and buyer profile, then scoring and following up fast. Fewer, higher-intent leads with instant WhatsApp follow-up beat a flood of cheap, cold ones.' },
+          { question: 'Which channel works best for real estate?', answer: 'A combination: Google Search captures active buyers, Meta and retargeting build interest and stay in front of them, and WhatsApp automation converts the enquiry. Together they move buyers from curious to committed.' },
+          { question: 'What is lead scoring?', answer: 'Automatically ranking enquiries by how ready they are to buy, so agents call the hottest leads first while the rest are nurtured automatically — no opportunity is wasted.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚房地产数字营销:如何获得高意向购房名单',
+        slug: 'fangdichan-marketing-malaysia',
+        excerpt: '房产名单大多是看看而已的人。看马来西亚经纪与发展商如何用精准广告、名单评分与 WhatsApp 自动化,拿到真正准备好的买家。',
+        seoTitle: '马来西亚房地产数字营销 2026 — Zeta Digital',
+        seoDescription: '马来西亚房产经纪与发展商如何获得高意向买家名单:精准 Google 与 Meta 广告、名单评分、WhatsApp 跟进与再营销。',
+        alt: '房产经纪把钥匙交给新屋买家',
+        body: `房地产的问题很少是名单太少 —— 而是烂名单太多。经纪和发展商花大把时间追那些只看不买的人,而真正准备好的买家,却在一通慢半拍的 WhatsApp 回复里溜走。今天马来西亚的房产营销,关键是拿到对的名单、并比对手更快回应。
+
+## 质量胜过数量
+一堆永远不买的便宜名单,花的比赚的还多。精准的 Google 和 Meta 投放 —— 锁定对的地点、价位和买家画像 —— 带来更少但好得多的咨询。目标是一条真正准备好看房、买房的人的管道。
+
+## 在对的时刻抓住意向
+买家会搜索"赛城公寓出售",或在 Facebook 上看项目看好几周。搜索广告在决策点抓住他们;Meta 和再营销让你的房源一直出现在他们眼前,直到他们咨询。每个渠道都在把买家从好奇推向决定。
+
+## 自动评分与分配名单
+不是每个名单都该得到同样的关注。自动名单评分标出最热的咨询,让经纪先打给他们;较慢的名单则自动培育 —— 没有人被漏掉,而你最宝贵的时间花在最可能成交的买家身上。
+
+## 赢下成交的 WhatsApp 跟进
+房产成交拼的是速度。一个自动化的 WhatsApp 助手几秒内回复、筛选买家、发房源、约看房 —— 7×24。先回应的经纪通常赢,而自动化确保那个人永远是你。
+
+想要一条高意向购房买家的管道?先来个免费诊断,我们帮你规划获客引擎。`,
+        faqs: [
+          { question: '马来西亚房产经纪如何获得更好的名单?', answer: '把广告锁定对的地点、价位和买家画像,再做评分和快速跟进。少而高意向的名单加上即时 WhatsApp 跟进,胜过一堆便宜又冷的名单。' },
+          { question: '房地产哪个渠道最有效?', answer: '组合:Google 搜索抓主动买家,Meta 和再营销建立兴趣并持续曝光,WhatsApp 自动化把咨询转成成交。三者合力把买家从好奇推向决定。' },
+          { question: '什么是名单评分?', answer: '按买家准备好的程度自动排序咨询,让经纪先打最热的名单,其余自动培育 —— 不浪费任何机会。' },
+        ],
+      },
+      ms: {
+        title: 'Pemasaran Digital Hartanah di Malaysia: Cara Dapatkan Lead Pembeli Niat Tinggi',
+        slug: 'pemasaran-hartanah-malaysia',
+        excerpt: 'Kebanyakan lead hartanah hanya tengok-tengok. Begini ejen dan pemaju Malaysia guna iklan disasarkan, pemarkahan lead dan automasi WhatsApp untuk dapat pembeli yang bersedia.',
+        seoTitle: 'Pemasaran Digital Hartanah Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana ejen dan pemaju hartanah Malaysia menjana lead pembeli niat tinggi: iklan Google dan Meta disasarkan, pemarkahan lead, susulan WhatsApp dan retargeting.',
+        alt: 'Ejen hartanah menyerahkan kunci kepada pembeli rumah baharu',
+        body: `Dalam hartanah, masalahnya jarang terlalu sedikit lead — tetapi terlalu banyak yang tak berkualiti. Ejen dan pemaju membakar berjam-jam mengejar yang hanya tengok-tengok, sementara pembeli bersedia terlepas dalam balasan WhatsApp yang lambat. Pemasaran hartanah moden di Malaysia ialah tentang menjana lead yang betul dan membalas sebelum pesaing.
+
+## Lead berkualiti kalahkan kuantiti
+Banjir lead murah yang tak pernah membeli berkos lebih daripada pulangan. Kempen Google dan Meta yang disasarkan — pada lokasi, julat harga dan profil pembeli yang betul — membawa pertanyaan lebih sedikit tetapi jauh lebih baik. Matlamatnya ialah saluran orang yang benar-benar bersedia melihat dan membeli.
+
+## Tangkap niat pada masa yang betul
+Pembeli mencari "kondo untuk dijual di Cyberjaya" atau menyemak projek di Facebook selama berminggu. Iklan carian menangkap mereka pada titik keputusan; Meta dan retargeting mengekalkan penyenaraian anda di hadapan mereka sehingga mereka bertanya. Setiap saluran memainkan peranan menggerakkan pembeli dari ingin tahu kepada komited.
+
+## Markah dan halakan lead secara automatik
+Bukan setiap lead layak perhatian sama. Pemarkahan lead automatik menandakan pertanyaan paling panas supaya ejen menelefon mereka dahulu, manakala lead lebih perlahan dipupuk automatik — tiada siapa tercicir, dan masa terbaik anda diberi kepada pembeli paling mungkin menutup deal.
+
+## Susulan WhatsApp yang menang deal
+Kelajuan memenangi deal hartanah. Pembantu WhatsApp automatik membalas dalam beberapa saat, menapis pembeli, berkongsi penyenaraian dan menempah tontonan — 24/7. Ejen yang membalas dahulu biasanya menang, dan automasi memastikan itu sentiasa anda.
+
+Mahu saluran pembeli hartanah niat tinggi? Mulakan dengan audit percuma dan kami petakan enjin lead anda.`,
+        faqs: [
+          { question: 'Bagaimana ejen hartanah dapat lead lebih baik di Malaysia?', answer: 'Dengan menyasarkan iklan ke lokasi, julat harga dan profil pembeli yang betul, kemudian markah dan susul dengan pantas. Lead lebih sedikit tetapi niat tinggi dengan susulan WhatsApp segera mengalahkan banjir lead murah dan sejuk.' },
+          { question: 'Saluran mana terbaik untuk hartanah?', answer: 'Gabungan: Google Search menangkap pembeli aktif, Meta dan retargeting membina minat dan kekal di hadapan mereka, dan automasi WhatsApp menukar pertanyaan. Bersama-sama ia menggerakkan pembeli dari ingin tahu kepada komited.' },
+          { question: 'Apa itu pemarkahan lead?', answer: 'Menyusun pertanyaan secara automatik mengikut tahap kesediaan membeli, supaya ejen telefon lead paling panas dahulu sementara yang lain dipupuk automatik — tiada peluang dibazirkan.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 12 — Restaurant & F&B Marketing ─────────────────────────────────
+  {
+    group: 'restaurant-fnb-2026',
+    category: { title: 'F&B Marketing', slug: 'fnb-marketing' },
+    unsplashQuery: 'restaurant dining table food malaysia',
+    posts: {
+      en: {
+        title: 'Restaurant Marketing in Malaysia: Fill Tables with Google, Social & WhatsApp',
+        slug: 'restaurant-marketing-malaysia',
+        excerpt: 'Hungry customers decide on their phones. Here is how Malaysian restaurants and cafes fill more tables, raise spend per visit and build loyal regulars — with data.',
+        seoTitle: 'Restaurant & F&B Marketing Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian restaurants and cafes fill tables: local SEO, Google Business Profile, mouth-watering social ads, reviews and WhatsApp broadcasts for repeat visits.',
+        alt: 'Diners enjoying a meal at a busy Malaysian restaurant',
+        body: `A hungry customer in your area is deciding where to eat right now — on their phone. They search "restaurant near me", scroll Instagram for something that looks delicious, and read your reviews. Restaurant marketing in Malaysia is about being the obvious, irresistible choice in that 30-second decision.
+
+## Win the "near me" search
+When someone searches for food nearby, Google shows local results first. A complete Google Business Profile with great photos, current hours, menu and strong reviews makes your restaurant the one they pick. It is free, and it directly fills tables.
+
+## Make people hungry on social
+Food sells on sight. Mouth-watering Instagram and TikTok content, boosted to people in your area, turns scrollers into walk-ins. Promotions and limited-time offers create urgency that fills quiet days and slow hours.
+
+## Reviews build the trust that fills tables
+Diners trust diners. A steady flow of genuine reviews — and quick, gracious replies — lifts your ranking and reassures first-timers. It is one of the cheapest, most powerful ways to win new covers.
+
+## Turn one-time diners into regulars
+The real profit is in repeat visits. A WhatsApp broadcast list lets you bring regulars back with new dishes, events and offers — raising spend per visit and building the loyal base that keeps a restaurant alive between busy seasons.
+
+Want fuller tables and more regulars? Start with a free audit and we will map your restaurant's growth plan.`,
+        faqs: [
+          { question: 'How do restaurants get more customers in Malaysia?', answer: 'Win local "near me" search with a strong Google Business Profile, make people hungry with social content and ads, build genuine reviews, and bring regulars back with WhatsApp broadcasts. Together they fill tables and raise repeat visits.' },
+          { question: 'Is Google Business Profile important for restaurants?', answer: 'Very. It is often the first thing a hungry customer sees. Great photos, current hours, menu and strong reviews directly influence whether they choose you over the place next door.' },
+          { question: 'How do restaurants get repeat customers?', answer: 'A WhatsApp broadcast list is one of the most effective tools — it lets you bring past diners back with new dishes, events and offers, raising spend per visit and building loyal regulars.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚餐饮营销:用 Google、社媒与 WhatsApp 把桌子坐满',
+        slug: 'canyin-marketing-malaysia',
+        excerpt: '饿着的客户在手机上做决定。看马来西亚餐厅与咖啡馆如何坐满更多桌、提高每次消费、培养忠实熟客 —— 用数据。',
+        seoTitle: '马来西亚餐饮营销 2026 — Zeta Digital',
+        seoDescription: '马来西亚餐厅与咖啡馆如何坐满桌子:本地 SEO、Google 商家资料、让人垂涎的社媒广告、评价,以及带来回头客的 WhatsApp 广播。',
+        alt: '食客在热闹的马来西亚餐厅用餐',
+        body: `你区域里一个饿着的客户,此刻正在手机上决定去哪吃。他搜索"附近餐厅"、刷 Instagram 找看起来好吃的、读你的评价。马来西亚的餐饮营销,就是在这 30 秒的决定里,成为那个显而易见、无法抗拒的选择。
+
+## 赢下"附近"搜索
+当有人搜索附近的吃的,Google 先显示本地结果。一份完整的 Google 商家资料 —— 好照片、最新营业时间、菜单和强评价 —— 让你的餐厅成为他选的那家。免费,而且直接坐满桌子。
+
+## 在社媒上让人饿
+食物靠看就能卖。让人垂涎的 Instagram 和 TikTok 内容,投放给你区域里的人,把滑手机的变成进店的。促销和限时优惠制造紧迫感,填满冷清的日子和时段。
+
+## 评价建立坐满桌子的信任
+食客信食客。源源不断的真实评价 —— 加上迅速、得体的回复 —— 提升你的排名,也让初次到访的人安心。这是赢得新客最便宜、最有力的方式之一。
+
+## 把一次性食客变成熟客
+真正的利润在回头客。一个 WhatsApp 广播名单,让你用新菜、活动和优惠把熟客带回来 —— 提高每次消费,建立那群让餐厅在淡旺季之间活下去的忠实基础。
+
+想要更满的桌子、更多熟客?先来个免费诊断,我们帮你的餐厅规划增长方案。`,
+        faqs: [
+          { question: '马来西亚餐厅如何获得更多客户?', answer: '用强的 Google 商家资料赢下本地"附近"搜索、用社媒内容和广告让人嘴馋、积累真实评价、用 WhatsApp 广播把熟客带回来。组合起来,坐满桌子又提高回头率。' },
+          { question: 'Google 商家资料对餐厅重要吗?', answer: '非常重要。它往往是饿着的客户最先看到的东西。好照片、最新营业时间、菜单和强评价,直接影响他选你还是隔壁。' },
+          { question: '餐厅如何获得回头客?', answer: 'WhatsApp 广播名单是最有效的工具之一 —— 用新菜、活动和优惠把老食客带回来,提高每次消费、培养忠实熟客。' },
+        ],
+      },
+      ms: {
+        title: 'Pemasaran Restoran di Malaysia: Penuhkan Meja dengan Google, Sosial & WhatsApp',
+        slug: 'pemasaran-restoran-malaysia',
+        excerpt: 'Pelanggan lapar membuat keputusan di telefon. Begini restoran dan kafe Malaysia penuhkan lebih banyak meja, naikkan perbelanjaan dan bina pelanggan tetap — dengan data.',
+        seoTitle: 'Pemasaran Restoran & F&B Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana restoran dan kafe Malaysia penuhkan meja: SEO tempatan, Profil Perniagaan Google, iklan sosial menyelerakan, ulasan dan siaran WhatsApp untuk kunjungan berulang.',
+        alt: 'Pengunjung menikmati hidangan di restoran Malaysia yang sibuk',
+        body: `Pelanggan lapar di kawasan anda sedang memutuskan tempat makan sekarang — di telefon mereka. Mereka mencari "restoran berdekatan", menatal Instagram mencari sesuatu yang nampak sedap, dan membaca ulasan anda. Pemasaran restoran di Malaysia ialah tentang menjadi pilihan jelas dan menggoda dalam keputusan 30 saat itu.
+
+## Menang carian "berdekatan"
+Apabila seseorang mencari makanan berhampiran, Google tunjuk hasil tempatan dahulu. Profil Perniagaan Google yang lengkap dengan foto hebat, waktu terkini, menu dan ulasan kuat menjadikan restoran anda pilihan mereka. Ia percuma, dan ia terus memenuhkan meja.
+
+## Buat orang lapar di sosial
+Makanan menjual dengan pandangan. Kandungan Instagram dan TikTok yang menyelerakan, dimajukan kepada orang di kawasan anda, menukar penatal menjadi pelanggan masuk. Promosi dan tawaran masa terhad mencipta urgensi yang memenuhkan hari dan waktu sepi.
+
+## Ulasan membina kepercayaan yang memenuhkan meja
+Pengunjung percaya pengunjung. Aliran ulasan tulen yang tetap — dengan balasan pantas dan sopan — menaikkan ranking dan meyakinkan pelanggan kali pertama. Ia antara cara termurah dan paling berkuasa memenangi pengunjung baharu.
+
+## Tukar pengunjung sekali menjadi pelanggan tetap
+Keuntungan sebenar ada pada kunjungan berulang. Senarai siaran WhatsApp membolehkan anda membawa pelanggan tetap kembali dengan hidangan baharu, acara dan tawaran — menaikkan perbelanjaan setiap kunjungan dan membina asas setia yang mengekalkan restoran antara musim sibuk.
+
+Mahu meja lebih penuh dan lebih ramai pelanggan tetap? Mulakan dengan audit percuma dan kami petakan pelan pertumbuhan restoran anda.`,
+        faqs: [
+          { question: 'Bagaimana restoran dapat lebih ramai pelanggan di Malaysia?', answer: 'Menang carian "berdekatan" tempatan dengan Profil Perniagaan Google yang kuat, buat orang lapar dengan kandungan dan iklan sosial, bina ulasan tulen, dan bawa pelanggan tetap kembali dengan siaran WhatsApp. Bersama-sama ia memenuhkan meja dan menaikkan kunjungan berulang.' },
+          { question: 'Adakah Profil Perniagaan Google penting untuk restoran?', answer: 'Sangat. Ia selalunya perkara pertama dilihat pelanggan lapar. Foto hebat, waktu terkini, menu dan ulasan kuat terus mempengaruhi sama ada mereka pilih anda berbanding tempat sebelah.' },
+          { question: 'Bagaimana restoran dapat pelanggan berulang?', answer: 'Senarai siaran WhatsApp ialah antara alat paling berkesan — ia membolehkan anda membawa pengunjung lama kembali dengan hidangan baharu, acara dan tawaran, menaikkan perbelanjaan setiap kunjungan dan membina pelanggan tetap.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 13 — Marketing Automation & CRM ─────────────────────────────────
+  {
+    group: 'marketing-automation-2026',
+    category: { title: 'Marketing Automation', slug: 'marketing-automation' },
+    unsplashQuery: 'marketing automation dashboard analytics',
+    posts: {
+      en: {
+        title: 'Marketing Automation & Customer Journeys for Malaysian Brands: Sell While You Sleep',
+        slug: 'marketing-automation-crm-malaysia',
+        excerpt: 'Most Malaysian businesses chase leads manually and lose them. Here is how marketing automation and CRM-driven customer journeys nurture, follow up and convert — on autopilot.',
+        seoTitle: 'Marketing Automation & CRM Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian brands use marketing automation and CRM-driven customer journeys: lead scoring, email and WhatsApp sequences, segmentation and follow-up that runs itself.',
+        alt: 'Marketer reviewing an automated customer journey on a dashboard',
+        body: `Most leads never buy on first contact — they buy after the fifth, the tenth, the well-timed reminder. The problem is no team can follow up that consistently by hand. Marketing automation does it for you: every lead nurtured, every follow-up sent, nothing forgotten, while you focus on the business.
+
+## Why manual follow-up loses money
+A lead that gets one reply and then silence is a lead handed to a competitor. Doing follow-up by hand means good leads go cold the moment things get busy. Automation removes the human gap — every enquiry enters a journey that nurtures it until it is ready to buy.
+
+## Customer journeys that nurture and convert
+A customer journey is a planned series of emails and WhatsApp messages, triggered by what each lead does. New enquiry gets a welcome and an offer; a quiet lead gets re-engaged; a hot lead gets routed to sales instantly. Built once, it works on every lead forever.
+
+## Segment and personalise with your data
+Not every customer wants the same message. Using your CRM data, automation sends the right offer to the right segment at the right time — by interest, budget, or stage. Relevant messages convert far better than one blast to everyone.
+
+## Email and WhatsApp on autopilot
+Email keeps you top of mind; WhatsApp gets opened in minutes. Combined into one automated flow, they turn cold leads into warm buyers over time — at a fraction of the cost of doing it by hand, and without a single lead slipping through.
+
+Want a follow-up machine that never forgets a lead? Start with a free audit and we will map your automation and customer journeys.`,
+        faqs: [
+          { question: 'What is marketing automation?', answer: 'Software that sends the right message to each lead automatically — welcome sequences, follow-ups, reminders and re-engagement — based on what they do. It nurtures and converts leads without manual chasing.' },
+          { question: 'What is a customer journey?', answer: 'A planned series of automated emails and WhatsApp messages triggered by each lead’s behaviour, designed to move them from first enquiry to paying customer. Built once, it works on every lead.' },
+          { question: 'Does automation work for small Malaysian businesses?', answer: 'Yes. Even a simple automated email and WhatsApp follow-up sequence recovers leads most small businesses lose to slow manual follow-up — usually paying for itself quickly.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚品牌的营销自动化与客户旅程:让生意在你睡觉时也成交',
+        slug: 'yingxiao-zidonghua-crm-malaysia',
+        excerpt: '多数马来西亚企业靠人手追名单、然后丢掉。看营销自动化与 CRM 客户旅程如何自动培育、跟进、成交。',
+        seoTitle: '营销自动化与 CRM 马来西亚 2026 — Zeta Digital',
+        seoDescription: '马来西亚品牌如何用营销自动化与 CRM 客户旅程:名单评分、电邮与 WhatsApp 序列、分众与自动跟进。',
+        alt: '营销人员在仪表板上查看自动化客户旅程',
+        body: `多数名单不会在第一次接触就买 —— 他们在第五次、第十次、那个时机刚好的提醒之后才买。问题是,没有团队能用人手那么稳定地跟进。营销自动化替你做:每个名单都被培育、每次跟进都送出、什么都不漏,而你专心做生意。
+
+## 为什么人手跟进在漏钱
+一个只回一次然后没下文的名单,等于送给对手。靠人手跟进,意味着一忙起来好名单就凉了。自动化补上这个人为缺口 —— 每个咨询都进入一段旅程,把它培育到准备好买。
+
+## 培育又成交的客户旅程
+客户旅程是一连串按名单行为触发的电邮和 WhatsApp 讯息。新咨询收到欢迎和优惠;沉默的名单被重新唤起;热名单立刻转给销售。建一次,就对每个名单永远有效。
+
+## 用你的数据分众与个性化
+不是每个客户都想要同一条讯息。用你的 CRM 数据,自动化在对的时间、把对的优惠、发给对的分众 —— 按兴趣、预算或阶段。相关的讯息,远比对所有人群发更能成交。
+
+## 电邮与 WhatsApp 自动跑
+电邮让你常驻客户心里;WhatsApp 几分钟内就被打开。合成一条自动化流程,它们随时间把冷名单变成温买家 —— 成本只是人手的一小部分,而且一个名单都不漏。
+
+想要一台永不忘记名单的跟进机器?先来个免费诊断,我们帮你规划自动化与客户旅程。`,
+        faqs: [
+          { question: '什么是营销自动化?', answer: '一种软件,按名单的行为自动发对的讯息 —— 欢迎序列、跟进、提醒和重新唤起。它在不靠人手追的情况下培育并转化名单。' },
+          { question: '什么是客户旅程?', answer: '一连串按名单行为触发的自动电邮和 WhatsApp 讯息,设计来把人从第一次咨询推到付费客户。建一次,对每个名单都有效。' },
+          { question: '自动化适合马来西亚小企业吗?', answer: '适合。哪怕只是一段简单的电邮加 WhatsApp 自动跟进,也能救回多数小企业因人手慢跟进而丢失的名单 —— 通常很快就回本。' },
+        ],
+      },
+      ms: {
+        title: 'Automasi Pemasaran & Perjalanan Pelanggan untuk Jenama Malaysia: Jual Semasa Anda Tidur',
+        slug: 'automasi-pemasaran-crm-malaysia',
+        excerpt: 'Kebanyakan perniagaan Malaysia mengejar lead secara manual dan kehilangannya. Begini automasi pemasaran dan perjalanan pelanggan CRM memupuk, menyusul dan menukar — secara autopilot.',
+        seoTitle: 'Automasi Pemasaran & CRM Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana jenama Malaysia guna automasi pemasaran dan perjalanan pelanggan CRM: pemarkahan lead, urutan emel dan WhatsApp, segmentasi dan susulan yang berjalan sendiri.',
+        alt: 'Pemasar menyemak perjalanan pelanggan automatik pada papan pemuka',
+        body: `Kebanyakan lead tidak membeli pada hubungan pertama — mereka membeli selepas kelima, kesepuluh, peringatan pada masa yang tepat. Masalahnya tiada pasukan boleh menyusul sekonsisten itu dengan tangan. Automasi pemasaran melakukannya untuk anda: setiap lead dipupuk, setiap susulan dihantar, tiada yang terlupa, sementara anda fokus pada perniagaan.
+
+## Kenapa susulan manual rugi wang
+Lead yang dapat satu balasan kemudian senyap ialah lead yang diserahkan kepada pesaing. Susulan dengan tangan bermakna lead baik menjadi sejuk saat keadaan sibuk. Automasi membuang jurang manusia — setiap pertanyaan memasuki perjalanan yang memupuknya sehingga bersedia membeli.
+
+## Perjalanan pelanggan yang memupuk dan menukar
+Perjalanan pelanggan ialah siri emel dan mesej WhatsApp terancang, dicetuskan oleh apa yang setiap lead lakukan. Pertanyaan baharu dapat sambutan dan tawaran; lead senyap diaktifkan semula; lead panas dihalakan ke jualan serta-merta. Dibina sekali, ia berfungsi pada setiap lead selamanya.
+
+## Segmen dan peribadikan dengan data anda
+Bukan setiap pelanggan mahu mesej sama. Menggunakan data CRM anda, automasi menghantar tawaran betul kepada segmen betul pada masa betul — mengikut minat, bajet atau peringkat. Mesej relevan menukar jauh lebih baik daripada satu siaran kepada semua.
+
+## Emel dan WhatsApp secara autopilot
+Emel mengekalkan anda di fikiran; WhatsApp dibuka dalam beberapa minit. Digabung menjadi satu aliran automatik, ia menukar lead sejuk menjadi pembeli panas dari masa ke masa — pada kos sebahagian kecil daripada buat dengan tangan, tanpa satu lead pun terlepas.
+
+Mahu mesin susulan yang tidak pernah lupa lead? Mulakan dengan audit percuma dan kami petakan automasi dan perjalanan pelanggan anda.`,
+        faqs: [
+          { question: 'Apa itu automasi pemasaran?', answer: 'Perisian yang menghantar mesej betul kepada setiap lead secara automatik — urutan sambutan, susulan, peringatan dan pengaktifan semula — berdasarkan tindakan mereka. Ia memupuk dan menukar lead tanpa kejaran manual.' },
+          { question: 'Apa itu perjalanan pelanggan?', answer: 'Siri emel dan mesej WhatsApp automatik yang dicetuskan oleh tingkah laku setiap lead, direka untuk menggerakkan mereka dari pertanyaan pertama ke pelanggan membayar. Dibina sekali, ia berfungsi pada setiap lead.' },
+          { question: 'Adakah automasi berfungsi untuk perniagaan kecil Malaysia?', answer: 'Ya. Walau urutan susulan emel dan WhatsApp yang ringkas pun menyelamatkan lead yang kebanyakan perniagaan kecil hilang akibat susulan manual lambat — biasanya pulang modal dengan cepat.' },
+        ],
+      },
+    },
+  },
+
+  // ── SET 14 — Insurance Lead Generation ──────────────────────────────────
+  {
+    group: 'insurance-2026',
+    category: { title: 'Insurance Marketing', slug: 'insurance-marketing' },
+    unsplashQuery: 'insurance agent meeting client handshake',
+    posts: {
+      en: {
+        title: 'Insurance Lead Generation in Malaysia: Warm Pipelines Without Cold Calls',
+        slug: 'insurance-lead-generation-malaysia',
+        excerpt: 'Cold calling is slow and demoralising. Here is how Malaysian insurance agents build a steady pipeline of warm, pre-qualified leads with ads, content and automation.',
+        seoTitle: 'Insurance Lead Generation Malaysia 2026 — Zeta Digital',
+        seoDescription: 'How Malaysian insurance agents and agencies generate warm, pre-qualified leads: targeted ads, trust-building content, lead scoring and automated WhatsApp follow-up.',
+        alt: 'Insurance agent shaking hands with a client across a desk',
+        body: `Most insurance agents still grow by cold calling and chasing referrals — slow, draining and unpredictable. Meanwhile, the agents winning in Malaysia are building a steady pipeline of warm leads who already trust them before the first call. The difference is a proper digital lead engine.
+
+## The problem with cold outreach
+Cold calls interrupt people who never asked to hear from you, so conversion is low and morale lower. It does not scale, and it puts your income at the mercy of how many calls you can make in a day. Warm inbound leads flip that completely.
+
+## Build trust before the first call
+Insurance is sold on trust. Helpful content — explaining coverage, claims, and planning in plain language — positions you as the expert people want to talk to. By the time a warm lead enquires, they already see you as the safe choice, and the conversation starts halfway closed.
+
+## Targeted ads that bring qualified leads
+Targeted Google and Meta campaigns put your offer in front of the right people — by life stage, income and need — and capture them with a simple form or WhatsApp. You pay to reach buyers who are actually considering cover, not random strangers.
+
+## Automated follow-up that never drops a lead
+Most leads need several touches before they commit. Automated WhatsApp and email follow-up nurtures every enquiry consistently, scores the hottest ones, and reminds you when to call — so no warm lead ever goes cold while you are busy with clients.
+
+Want a steady flow of warm insurance leads? Start with a free audit and we will map your lead-generation engine.`,
+        faqs: [
+          { question: 'How do insurance agents get leads without cold calling?', answer: 'By running targeted ads, publishing trust-building content, and capturing enquiries with forms or WhatsApp, then nurturing them with automated follow-up. This builds a steady pipeline of warm, pre-qualified leads.' },
+          { question: 'What kind of content works for insurance?', answer: 'Helpful, plain-language content that explains coverage, claims and financial planning. It builds trust and positions the agent as the expert, so leads arrive already seeing them as the safe choice.' },
+          { question: 'How does follow-up automation help agents?', answer: 'Most leads need several touches before they buy. Automated WhatsApp and email follow-up nurtures every lead consistently and flags the hottest ones, so no warm prospect goes cold while the agent is busy.' },
+        ],
+      },
+      zh: {
+        title: '马来西亚保险获客:不靠陌生电话也能有温暖名单管道',
+        slug: 'baoxian-huoke-malaysia',
+        excerpt: '陌生电访又慢又消磨人。看马来西亚保险经纪如何用广告、内容与自动化,建立稳定的温暖、已筛选名单管道。',
+        seoTitle: '马来西亚保险获客 2026 — Zeta Digital',
+        seoDescription: '马来西亚保险经纪与代理如何获得温暖、已筛选名单:精准广告、建立信任的内容、名单评分与自动 WhatsApp 跟进。',
+        alt: '保险经纪隔着办公桌与客户握手',
+        body: `多数保险经纪还在靠陌生电访和追转介绍来增长 —— 慢、耗神、又不可预测。而在马来西亚做得好的经纪,正在建立一条稳定的温暖名单管道,这些人在第一通电话前就已经信任他。差别就在一套像样的数字获客引擎。
+
+## 陌生开发的问题
+陌生电话打断那些从没要求听你说话的人,所以转化低、士气更低。它无法规模化,还把你的收入押在你一天能打多少通电话上。温暖的主动名单,把这一切彻底翻转。
+
+## 在第一通电话前先建立信任
+保险靠信任成交。用平实语言解释保障、理赔和规划的有用内容,把你定位成人们想找的那位专家。等温暖名单来咨询时,他们已经把你看成安全的选择,对话一开始就成功了一半。
+
+## 带来合格名单的精准广告
+精准的 Google 和 Meta 投放,把你的方案放在对的人面前 —— 按人生阶段、收入和需求 —— 再用简单表单或 WhatsApp 接住。你花的钱触及的是真正在考虑保障的买家,而不是随机的陌生人。
+
+## 永不漏名单的自动跟进
+多数名单要被触达好几次才会决定。自动化的 WhatsApp 和电邮跟进,稳定培育每个咨询、标出最热的、并提醒你何时该打电话 —— 让任何温暖名单都不会在你忙客户时凉掉。
+
+想要稳定的温暖保险名单?先来个免费诊断,我们帮你规划获客引擎。`,
+        faqs: [
+          { question: '保险经纪不打陌生电话怎么获客?', answer: '靠精准广告、发布建立信任的内容、用表单或 WhatsApp 接住咨询,再用自动跟进培育。这样建立一条稳定的温暖、已筛选名单管道。' },
+          { question: '保险适合什么内容?', answer: '用平实语言解释保障、理赔和理财规划的有用内容。它建立信任、把经纪定位成专家,名单来时已经把他看成安全的选择。' },
+          { question: '跟进自动化怎么帮经纪?', answer: '多数名单要被触达好几次才买。自动 WhatsApp 和电邮跟进稳定培育每个名单、标出最热的,让任何温暖客户都不会在经纪忙时凉掉。' },
+        ],
+      },
+      ms: {
+        title: 'Penjanaan Lead Insurans di Malaysia: Saluran Hangat Tanpa Panggilan Sejuk',
+        slug: 'penjanaan-lead-insurans-malaysia',
+        excerpt: 'Panggilan sejuk lambat dan melemahkan semangat. Begini ejen insurans Malaysia bina saluran lead hangat dan berkelayakan dengan iklan, kandungan dan automasi.',
+        seoTitle: 'Penjanaan Lead Insurans Malaysia 2026 — Zeta Digital',
+        seoDescription: 'Bagaimana ejen dan agensi insurans Malaysia menjana lead hangat dan berkelayakan: iklan disasarkan, kandungan membina kepercayaan, pemarkahan lead dan susulan WhatsApp automatik.',
+        alt: 'Ejen insurans bersalaman dengan pelanggan di meja',
+        body: `Kebanyakan ejen insurans masih membesar dengan panggilan sejuk dan mengejar rujukan — lambat, melelahkan dan tidak menentu. Sementara itu, ejen yang menang di Malaysia sedang membina saluran lead hangat yang sudah mempercayai mereka sebelum panggilan pertama. Perbezaannya ialah enjin lead digital yang betul.
+
+## Masalah dengan capaian sejuk
+Panggilan sejuk mengganggu orang yang tidak pernah minta mendengar daripada anda, jadi penukaran rendah dan semangat lebih rendah. Ia tidak berskala, dan ia meletakkan pendapatan anda pada belas kasihan berapa banyak panggilan boleh anda buat sehari. Lead masuk yang hangat membalikkannya sepenuhnya.
+
+## Bina kepercayaan sebelum panggilan pertama
+Insurans dijual atas kepercayaan. Kandungan berguna — menerangkan perlindungan, tuntutan dan perancangan dalam bahasa mudah — meletakkan anda sebagai pakar yang orang mahu berbual. Apabila lead hangat bertanya, mereka sudah melihat anda sebagai pilihan selamat, dan perbualan bermula separuh tertutup.
+
+## Iklan disasarkan yang membawa lead berkelayakan
+Kempen Google dan Meta yang disasarkan meletakkan tawaran anda di hadapan orang yang betul — mengikut peringkat hidup, pendapatan dan keperluan — dan menangkap mereka dengan borang ringkas atau WhatsApp. Anda membayar untuk mencapai pembeli yang benar-benar mempertimbangkan perlindungan, bukan orang asing rawak.
+
+## Susulan automatik yang tidak pernah jatuhkan lead
+Kebanyakan lead perlukan beberapa sentuhan sebelum komited. Susulan WhatsApp dan emel automatik memupuk setiap pertanyaan secara konsisten, memberi markah yang paling panas, dan mengingatkan anda bila perlu menelefon — jadi tiada lead hangat menjadi sejuk semasa anda sibuk dengan pelanggan.
+
+Mahu aliran lead insurans hangat yang tetap? Mulakan dengan audit percuma dan kami petakan enjin penjanaan lead anda.`,
+        faqs: [
+          { question: 'Bagaimana ejen insurans dapat lead tanpa panggilan sejuk?', answer: 'Dengan menjalankan iklan disasarkan, menerbitkan kandungan membina kepercayaan, dan menangkap pertanyaan dengan borang atau WhatsApp, kemudian memupuknya dengan susulan automatik. Ini membina saluran lead hangat dan berkelayakan yang tetap.' },
+          { question: 'Kandungan jenis apa berkesan untuk insurans?', answer: 'Kandungan berguna dalam bahasa mudah yang menerangkan perlindungan, tuntutan dan perancangan kewangan. Ia membina kepercayaan dan meletakkan ejen sebagai pakar, jadi lead tiba sudah melihat mereka sebagai pilihan selamat.' },
+          { question: 'Bagaimana automasi susulan membantu ejen?', answer: 'Kebanyakan lead perlukan beberapa sentuhan sebelum membeli. Susulan WhatsApp dan emel automatik memupuk setiap lead secara konsisten dan menandakan yang paling panas, jadi tiada prospek hangat menjadi sejuk semasa ejen sibuk.' },
+        ],
+      },
+    },
+  },
 ]
